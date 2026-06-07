@@ -84,4 +84,7 @@ def dispatch(action: dict) -> str:
 
         return f"OBSERVATION:\nstdout: {result['stdout']}"
 
-    return "OBSERVATION:\nUnknown action."
+    obs = f"OBSERVATION:\nstdout: {result['stdout']}"
+    if result.get('stderr'):
+        obs += f"\nSolver warnings:\n{result['stderr'][:500]}"
+    return obs
