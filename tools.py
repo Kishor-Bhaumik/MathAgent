@@ -1,7 +1,6 @@
 from code_runner import execute_python
 
-# ── Tool schemas (ReAct text format) ─────────────────────────────────────────
-# মডেলকে system prompt-এ এটা দেখানো হবে
+# ── Tool descriptions (ReAct text format) ─────────────────────────────────────
 
 TOOL_DESCRIPTIONS = """
 You have access to two tools:
@@ -35,7 +34,6 @@ def parse_action(text: str) -> dict:
         {'type': 'unknown',        'raw': str}
     """
     if 'ACTION: run_python' in text:
-        # code block বের করো
         code = ''
         if '```python' in text:
             start = text.index('```python') + len('```python')
@@ -53,7 +51,6 @@ def parse_action(text: str) -> dict:
             if line.strip().startswith('CHOICE:'):
                 choice = line.split('CHOICE:')[-1].strip().upper()
                 break
-        # শুধু A B C D নেবো
         if choice in ('A', 'B', 'C', 'D'):
             return {'type': 'submit_answer', 'choice': choice}
 
@@ -67,23 +64,31 @@ def dispatch(action: dict) -> str:
     action dict নিয়ে tool চালায়, observation string ফেরত দেয়।
     submit_answer-এর জন্য কিছু করে না — agent_runner handle করবে।
     """
-    if action['type'] == 'run_python':
-        result = execute_python(action['code'])
+    if action['type'] != 'run_python':
+        return "OBSERVATION:\nUnknown action."
 
-        if result['timed_out']:
-            return "OBSERVATION:\nError: Execution timed out (30s). Rewrite the code to be faster."
+    result = execute_python(action['code'])
 
-        if result['error']:
-            # traceback-এর শেষ ১৫ লাইন দেখাও — পুরোটা context waste
-            lines = result['error'].strip().splitlines()
-            short = '\n'.join(lines[-15:])
-            return f"OBSERVATION:\nError:\n{short}"
+    if result['timed_out']:
+        return (
+            "OBSERVATION:\n"
+            "Error: Execution timed out (30s). "
+            "Your code may contain an infinite loop or a diverging solver. "
+            "Rewrite with a finite stopping condition."
+        )
 
-        if not result['stdout']:
-            return "OBSERVATION:\nNo output. Did you forget to print() the answer?"
+    if result['error']:
+        lines = result['error'].strip().splitlines()
+        short = '\n'.join(lines[-15:])
+        return f"OBSERVATION:\nError:\n{short}"
 
-        return f"OBSERVATION:\nstdout: {result['stdout']}"
+    if not result['stdout']:
+        stderr_hint = ''
+        if result.get('stderr'):
+            stderr_hint = f"\nSolver warnings:\n{result['stderr'][:300]}"
+        return "OBSERVATION:\nNo output. Did you forget to print() the answer?" + stderr_hint
 
+    # success — stdout + stderr (lsoda warnings etc.) দুইটাই দাও
     obs = f"OBSERVATION:\nstdout: {result['stdout']}"
     if result.get('stderr'):
         obs += f"\nSolver warnings:\n{result['stderr'][:500]}"
