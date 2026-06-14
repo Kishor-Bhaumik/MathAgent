@@ -1,0 +1,6 @@
+*.json
+*.jsonl
+__pycache__/
+!/answers/**
+!/results/**
+!/questions/**

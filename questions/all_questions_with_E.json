@@ -1,0 +1,5275 @@
+[
+  {
+    "id": "STOCH_01",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.3986, with k(t) = 0.7449 / (1.0 + 0.0849*t) and S(t) = 4.3835*np.exp(-0.1806*t)*np.sin(0.4043*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.1192, beta=0.6405) (rate parameterization). A reading is valid iff T in [2.92, 6.0] and C(T) > 1.1591. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.7449 / (1.0 + 0.0849*t)",
+      "S_expr": "4.3835*np.exp(-0.1806*t)*np.sin(0.4043*t)",
+      "C0": 2.3986,
+      "t_end": 7.0,
+      "gamma_alpha": 2.1192,
+      "gamma_beta": 0.6405,
+      "t_lo": 2.92,
+      "t_hi": 6.0,
+      "threshold": 1.1591
+    },
+    "options": {
+      "A": 0.498659,
+      "B": 0.569868,
+      "C": 0.359219,
+      "D": 0.24764,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_02",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.7838, with k(t) = 0.2613 + 0.214*np.sin(1.0385*t) and S(t) = 4.4149 / (1.0 + 0.2518*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=4.1449, beta=1.4704) (rate parameterization). A reading is valid iff T in [2.02, 5.49] and C(T) > 0.9435. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.2613 + 0.214*np.sin(1.0385*t)",
+      "S_expr": "4.4149 / (1.0 + 0.2518*t)",
+      "C0": 3.7838,
+      "t_end": 6.49,
+      "gamma_alpha": 4.1449,
+      "gamma_beta": 1.4704,
+      "t_lo": 2.02,
+      "t_hi": 5.49,
+      "threshold": 0.9435
+    },
+    "options": {
+      "A": 0.298267,
+      "B": 0.635883,
+      "C": 0.967061,
+      "D": 0.433463,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_03",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.992, with k(t) = 1.4895 / (1.0 + 0.21*t) and S(t) = 3.7385*np.sin(1.3114*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.9162, beta=0.4353) (rate parameterization). A reading is valid iff T in [1.73, 6.12] and C(T) > 0.8363. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "1.4895 / (1.0 + 0.21*t)",
+      "S_expr": "3.7385*np.sin(1.3114*t)",
+      "C0": 3.992,
+      "t_end": 7.12,
+      "gamma_alpha": 2.9162,
+      "gamma_beta": 0.4353,
+      "t_lo": 1.73,
+      "t_hi": 6.12,
+      "threshold": 0.8363
+    },
+    "options": {
+      "A": 0.074782,
+      "B": 0.210037,
+      "C": 0.174695,
+      "D": 0.126129,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_04",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.901, with k(t) = 1.247 / (1.0 + 0.1571*t) and S(t) = 2.086*np.exp(-0.1996*t) + 1.2403*np.cos(0.4245*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.4444, beta=0.5681) (rate parameterization). A reading is valid iff T in [1.43, 4.85] and C(T) > 0.572. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "1.247 / (1.0 + 0.1571*t)",
+      "S_expr": "2.086*np.exp(-0.1996*t) + 1.2403*np.cos(0.4245*t)",
+      "C0": 3.901,
+      "t_end": 5.85,
+      "gamma_alpha": 5.4444,
+      "gamma_beta": 0.5681,
+      "t_lo": 1.43,
+      "t_hi": 4.85,
+      "threshold": 0.572
+    },
+    "options": {
+      "A": 0.100136,
+      "B": 0.145588,
+      "C": 0.048902,
+      "D": 0.042839,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_05",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.7846, with k(t) = 0.9348 / (1.0 + 0.1634*t) and S(t) = 4.8876*np.cos(1.2144*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.4256, beta=1.0878) (rate parameterization). A reading is valid iff T in [3.31, 7.33] and C(T) > 1.7308. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.9348 / (1.0 + 0.1634*t)",
+      "S_expr": "4.8876*np.cos(1.2144*t)",
+      "C0": 2.7846,
+      "t_end": 8.33,
+      "gamma_alpha": 2.4256,
+      "gamma_beta": 1.0878,
+      "t_lo": 3.31,
+      "t_hi": 7.33,
+      "threshold": 1.7308
+    },
+    "options": {
+      "A": 0.050843,
+      "B": 0.033024,
+      "C": 0.016411,
+      "D": 0.043188,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_06",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.4689, with k(t) = 0.2514 + 0.2458*np.cos(t) and S(t) = 5.8899*np.exp(-0.1159*t)*np.sin(0.4509*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.7874, beta=0.5816) (rate parameterization). A reading is valid iff T in [1.72, 6.42] and C(T) > 1.197. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.2514 + 0.2458*np.cos(t)",
+      "S_expr": "5.8899*np.exp(-0.1159*t)*np.sin(0.4509*t)",
+      "C0": 3.4689,
+      "t_end": 7.42,
+      "gamma_alpha": 5.7874,
+      "gamma_beta": 0.5816,
+      "t_lo": 1.72,
+      "t_hi": 6.42,
+      "threshold": 1.197
+    },
+    "options": {
+      "A": 0.091407,
+      "B": 0.199857,
+      "C": 0.06564,
+      "D": 0.316809,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_07",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 4.5744, with k(t) = 0.2126 + 0.2662*np.sin(1.3827*t) and S(t) = 1.355*np.exp(-0.1336*t)*np.cos(0.5747*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.4385, beta=0.4779) (rate parameterization). A reading is valid iff T in [1.36, 5.03] and C(T) > 0.7046. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.2126 + 0.2662*np.sin(1.3827*t)",
+      "S_expr": "1.355*np.exp(-0.1336*t)*np.cos(0.5747*t)",
+      "C0": 4.5744,
+      "t_end": 6.03,
+      "gamma_alpha": 5.4385,
+      "gamma_beta": 0.4779,
+      "t_lo": 1.36,
+      "t_hi": 5.03,
+      "threshold": 0.7046
+    },
+    "options": {
+      "A": 0.096089,
+      "B": 0.088577,
+      "C": 0.027413,
+      "D": 0.063396,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_08",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 0.9917, with k(t) = 0.4467 + 0.3592*np.cos(0.5813*t) and S(t) = 1.3031*np.exp(-0.1511*t)*np.sin(1.2607*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.7664, beta=0.9899) (rate parameterization). A reading is valid iff T in [1.29, 5.58] and C(T) > 0.5383. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.4467 + 0.3592*np.cos(0.5813*t)",
+      "S_expr": "1.3031*np.exp(-0.1511*t)*np.sin(1.2607*t)",
+      "C0": 0.9917,
+      "t_end": 6.58,
+      "gamma_alpha": 2.7664,
+      "gamma_beta": 0.9899,
+      "t_lo": 1.29,
+      "t_hi": 5.58,
+      "threshold": 0.5383
+    },
+    "options": {
+      "A": 0.290624,
+      "B": 0.484311,
+      "C": 0.253172,
+      "D": 0.66515,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_09",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.2409, with k(t) = 0.3832 + 0.0589*t and S(t) = 4.4586*np.sin(1.3829*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.0086, beta=0.8295) (rate parameterization). A reading is valid iff T in [3.91, 9.69] and C(T) > 1.8751. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.3832 + 0.0589*t",
+      "S_expr": "4.4586*np.sin(1.3829*t)",
+      "C0": 1.2409,
+      "t_end": 10.69,
+      "gamma_alpha": 2.0086,
+      "gamma_beta": 0.8295,
+      "t_lo": 3.91,
+      "t_hi": 9.69,
+      "threshold": 1.8751
+    },
+    "options": {
+      "A": 0.027583,
+      "B": 0.037566,
+      "C": 0.016906,
+      "D": 0.04452,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_10",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.0395, with k(t) = 0.2341 + 0.2523*np.exp(-0.2628*t) and S(t) = 3.9752*np.exp(-0.1415*t)*np.sin(0.5822*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.5611, beta=0.6708) (rate parameterization). A reading is valid iff T in [1.17, 5.92] and C(T) > 1.3107. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.2341 + 0.2523*np.exp(-0.2628*t)",
+      "S_expr": "3.9752*np.exp(-0.1415*t)*np.sin(0.5822*t)",
+      "C0": 1.0395,
+      "t_end": 6.92,
+      "gamma_alpha": 5.5611,
+      "gamma_beta": 0.6708,
+      "t_lo": 1.17,
+      "t_hi": 5.92,
+      "threshold": 1.3107
+    },
+    "options": {
+      "A": 0.420532,
+      "B": 0.426004,
+      "C": 0.271705,
+      "D": 0.088608,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_11",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.9194, with k(t) = 0.3897 + 0.3256*np.tanh(0.129*t) and S(t) = 3.4846*(1.0 - np.exp(-0.3252*t))*np.cos(0.42*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=4.0235, beta=0.5457) (rate parameterization). A reading is valid iff T in [1.39, 6.33] and C(T) > 0.8933. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.3897 + 0.3256*np.tanh(0.129*t)",
+      "S_expr": "3.4846*(1.0 - np.exp(-0.3252*t))*np.cos(0.42*t)",
+      "C0": 2.9194,
+      "t_end": 7.33,
+      "gamma_alpha": 4.0235,
+      "gamma_beta": 0.5457,
+      "t_lo": 1.39,
+      "t_hi": 6.33,
+      "threshold": 0.8933
+    },
+    "options": {
+      "A": 0.21604,
+      "B": 0.119295,
+      "C": 0.318718,
+      "D": 0.145283,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_12",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.7293, with k(t) = 0.3587 + 0.3669*np.exp(-0.2356*t) and S(t) = 2.3617*np.exp(-0.1289*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.8144, beta=1.0977) (rate parameterization). A reading is valid iff T in [3.8, 7.11] and C(T) > 0.7488. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.3587 + 0.3669*np.exp(-0.2356*t)",
+      "S_expr": "2.3617*np.exp(-0.1289*t)",
+      "C0": 3.7293,
+      "t_end": 8.11,
+      "gamma_alpha": 2.8144,
+      "gamma_beta": 1.0977,
+      "t_lo": 3.8,
+      "t_hi": 7.11,
+      "threshold": 0.7488
+    },
+    "options": {
+      "A": 0.063183,
+      "B": 0.171572,
+      "C": 0.229378,
+      "D": 0.086573,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_13",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 0.6621, with k(t) = 0.531 + 0.2283*np.tanh(0.1039*t) and S(t) = 5.7253*np.exp(-0.1444*t)*np.sin(0.4789*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.4769, beta=1.0078) (rate parameterization). A reading is valid iff T in [2.91, 6.7] and C(T) > 1.0306. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.531 + 0.2283*np.tanh(0.1039*t)",
+      "S_expr": "5.7253*np.exp(-0.1444*t)*np.sin(0.4789*t)",
+      "C0": 0.6621,
+      "t_end": 7.7,
+      "gamma_alpha": 3.4769,
+      "gamma_beta": 1.0078,
+      "t_lo": 2.91,
+      "t_hi": 6.7,
+      "threshold": 1.0306
+    },
+    "options": {
+      "A": 0.646451,
+      "B": 0.167123,
+      "C": 0.490951,
+      "D": 0.209721,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_14",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.8145, with k(t) = 0.7323 + 0.0981*t and S(t) = 5.4071*np.exp(-0.0245*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.3287, beta=1.4239) (rate parameterization). A reading is valid iff T in [3.92, 9.17] and C(T) > 1.6638. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.7323 + 0.0981*t",
+      "S_expr": "5.4071*np.exp(-0.0245*t)",
+      "C0": 3.8145,
+      "t_end": 10.17,
+      "gamma_alpha": 3.3287,
+      "gamma_beta": 1.4239,
+      "t_lo": 3.92,
+      "t_hi": 9.17,
+      "threshold": 1.6638
+    },
+    "options": {
+      "A": 0.067214,
+      "B": 0.061969,
+      "C": 0.040148,
+      "D": 0.113292,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_15",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.9772, with k(t) = 1.3205 / (1.0 + 0.2678*t) and S(t) = 1.0947*np.sin(0.5318*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.4574, beta=1.4636) (rate parameterization). A reading is valid iff T in [3.45, 7.83] and C(T) > 0.7745. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "1.3205 / (1.0 + 0.2678*t)",
+      "S_expr": "1.0947*np.sin(0.5318*t)",
+      "C0": 1.9772,
+      "t_end": 8.83,
+      "gamma_alpha": 5.4574,
+      "gamma_beta": 1.4636,
+      "t_lo": 3.45,
+      "t_hi": 7.83,
+      "threshold": 0.7745
+    },
+    "options": {
+      "A": 0.440501,
+      "B": 0.692383,
+      "C": 0.685681,
+      "D": 0.142857,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_16",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.6895, with k(t) = 0.6371 + 0.1941*np.sin(1.4093*t) and S(t) = 2.926*np.exp(-0.1238*t)*np.sin(0.6057*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.0068, beta=1.4181) (rate parameterization). A reading is valid iff T in [1.11, 5.9] and C(T) > 1.2154. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.6371 + 0.1941*np.sin(1.4093*t)",
+      "S_expr": "2.926*np.exp(-0.1238*t)*np.sin(0.6057*t)",
+      "C0": 3.6895,
+      "t_end": 6.9,
+      "gamma_alpha": 2.0068,
+      "gamma_beta": 1.4181,
+      "t_lo": 1.11,
+      "t_hi": 5.9,
+      "threshold": 1.2154
+    },
+    "options": {
+      "A": 0.295051,
+      "B": 0.219422,
+      "C": 0.532283,
+      "D": 0.893996,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_17",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.4922, with k(t) = 1.1669 / (1.0 + 0.1315*t) and S(t) = 3.2176*np.cos(0.5302*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.5166, beta=1.2229) (rate parameterization). A reading is valid iff T in [3.16, 7.06] and C(T) > 0.5958. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "1.1669 / (1.0 + 0.1315*t)",
+      "S_expr": "3.2176*np.cos(0.5302*t)",
+      "C0": 3.4922,
+      "t_end": 8.06,
+      "gamma_alpha": 3.5166,
+      "gamma_beta": 1.2229,
+      "t_lo": 3.16,
+      "t_hi": 7.06,
+      "threshold": 0.5958
+    },
+    "options": {
+      "A": 0.142492,
+      "B": 0.044849,
+      "C": 0.053956,
+      "D": 0.093276,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_18",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.4873, with k(t) = 0.5556 + 0.0835*t and S(t) = 4.2943*np.exp(-0.0711*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=4.477, beta=0.5027) (rate parameterization). A reading is valid iff T in [2.39, 6.72] and C(T) > 1.9184. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.5556 + 0.0835*t",
+      "S_expr": "4.2943*np.exp(-0.0711*t)",
+      "C0": 3.4873,
+      "t_end": 7.72,
+      "gamma_alpha": 4.477,
+      "gamma_beta": 0.5027,
+      "t_lo": 2.39,
+      "t_hi": 6.72,
+      "threshold": 1.9184
+    },
+    "options": {
+      "A": 0.208107,
+      "B": 0.452517,
+      "C": 0.32463,
+      "D": 0.198071,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_19",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.9652, with k(t) = 0.6592 + 0.0507*t and S(t) = 1.732*np.exp(-0.1484*t) + 1.6264*np.cos(0.305*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.4263, beta=0.8677) (rate parameterization). A reading is valid iff T in [2.37, 8.03] and C(T) > 0.599. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.6592 + 0.0507*t",
+      "S_expr": "1.732*np.exp(-0.1484*t) + 1.6264*np.cos(0.305*t)",
+      "C0": 3.9652,
+      "t_end": 9.03,
+      "gamma_alpha": 2.4263,
+      "gamma_beta": 0.8677,
+      "t_lo": 2.37,
+      "t_hi": 8.03,
+      "threshold": 0.599
+    },
+    "options": {
+      "A": 0.158386,
+      "B": 0.323377,
+      "C": 0.80055,
+      "D": 0.475616,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_20",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.636, with k(t) = 0.77 + 0.3674*np.sin(1.419*t) and S(t) = 3.4917*np.exp(-0.1322*t) + 1.6155*np.cos(1.1075*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.0368, beta=0.672) (rate parameterization). A reading is valid iff T in [3.0, 8.96] and C(T) > 1.384. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.77 + 0.3674*np.sin(1.419*t)",
+      "S_expr": "3.4917*np.exp(-0.1322*t) + 1.6155*np.cos(1.1075*t)",
+      "C0": 2.636,
+      "t_end": 9.96,
+      "gamma_alpha": 3.0368,
+      "gamma_beta": 0.672,
+      "t_lo": 3.0,
+      "t_hi": 8.96,
+      "threshold": 1.384
+    },
+    "options": {
+      "A": 0.975881,
+      "B": 0.896674,
+      "C": 0.607524,
+      "D": 0.942087,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_21",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.9418, with k(t) = 0.2905 + 0.2149*np.exp(-0.0882*t) and S(t) = 1.2569*np.sin(0.7891*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.6631, beta=0.6275) (rate parameterization). A reading is valid iff T in [1.96, 6.58] and C(T) > 1.0142. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.2905 + 0.2149*np.exp(-0.0882*t)",
+      "S_expr": "1.2569*np.sin(0.7891*t)",
+      "C0": 2.9418,
+      "t_end": 7.58,
+      "gamma_alpha": 3.6631,
+      "gamma_beta": 0.6275,
+      "t_lo": 1.96,
+      "t_hi": 6.58,
+      "threshold": 1.0142
+    },
+    "options": {
+      "A": 0.12439,
+      "B": 0.367947,
+      "C": 0.604424,
+      "D": 0.548532,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_22",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.3194, with k(t) = 0.5441 + 0.0418*t and S(t) = 1.1161*(1.0 - np.exp(-0.2345*t))*np.cos(1.115*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.6602, beta=0.9141) (rate parameterization). A reading is valid iff T in [2.61, 7.81] and C(T) > 0.517. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.5441 + 0.0418*t",
+      "S_expr": "1.1161*(1.0 - np.exp(-0.2345*t))*np.cos(1.115*t)",
+      "C0": 2.3194,
+      "t_end": 8.81,
+      "gamma_alpha": 2.6602,
+      "gamma_beta": 0.9141,
+      "t_lo": 2.61,
+      "t_hi": 7.81,
+      "threshold": 0.517
+    },
+    "options": {
+      "A": 0.016899,
+      "B": 0.055516,
+      "C": 0.04996,
+      "D": 0.037463,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_23",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 4.8078, with k(t) = 0.6494 + 0.1156*np.sin(t) and S(t) = 2.8969 / (1.0 + 0.0672*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.161, beta=0.4341) (rate parameterization). A reading is valid iff T in [1.76, 5.01] and C(T) > 0.7204. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.6494 + 0.1156*np.sin(t)",
+      "S_expr": "2.8969 / (1.0 + 0.0672*t)",
+      "C0": 4.8078,
+      "t_end": 6.01,
+      "gamma_alpha": 2.161,
+      "gamma_beta": 0.4341,
+      "t_lo": 1.76,
+      "t_hi": 5.01,
+      "threshold": 0.7204
+    },
+    "options": {
+      "A": 0.163804,
+      "B": 0.62742,
+      "C": 0.194337,
+      "D": 0.449629,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_24",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.9038, with k(t) = 0.6667 + 0.1491*np.cos(t) and S(t) = 1.4324*np.cos(0.3308*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=4.7094, beta=1.454) (rate parameterization). A reading is valid iff T in [3.3, 6.8] and C(T) > 0.9743. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.6667 + 0.1491*np.cos(t)",
+      "S_expr": "1.4324*np.cos(0.3308*t)",
+      "C0": 1.9038,
+      "t_end": 7.8,
+      "gamma_alpha": 4.7094,
+      "gamma_beta": 1.454,
+      "t_lo": 3.3,
+      "t_hi": 6.8,
+      "threshold": 0.9743
+    },
+    "options": {
+      "A": 0.130634,
+      "B": 0.282049,
+      "C": 0.37816,
+      "D": 0.116767,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_25",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 4.2292, with k(t) = 0.2414 + 0.2943*np.sin(0.519*t) and S(t) = 3.467*np.exp(-0.0658*t) + 1.4534*np.cos(1.1647*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=4.8292, beta=0.879) (rate parameterization). A reading is valid iff T in [2.04, 6.33] and C(T) > 1.5475. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.2414 + 0.2943*np.sin(0.519*t)",
+      "S_expr": "3.467*np.exp(-0.0658*t) + 1.4534*np.cos(1.1647*t)",
+      "C0": 4.2292,
+      "t_end": 7.33,
+      "gamma_alpha": 4.8292,
+      "gamma_beta": 0.879,
+      "t_lo": 2.04,
+      "t_hi": 6.33,
+      "threshold": 1.5475
+    },
+    "options": {
+      "A": 0.984657,
+      "B": 0.636756,
+      "C": 0.999999,
+      "D": 0.946187,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_26",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 4.0902, with k(t) = 0.5419 + 0.3005*np.tanh(0.2346*t) and S(t) = 4.4038*(1.0 - np.exp(-0.1727*t))*np.cos(0.5545*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.3614, beta=1.3684) (rate parameterization). A reading is valid iff T in [1.84, 6.19] and C(T) > 1.492. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.5419 + 0.3005*np.tanh(0.2346*t)",
+      "S_expr": "4.4038*(1.0 - np.exp(-0.1727*t))*np.cos(0.5545*t)",
+      "C0": 4.0902,
+      "t_end": 7.19,
+      "gamma_alpha": 3.3614,
+      "gamma_beta": 1.3684,
+      "t_lo": 1.84,
+      "t_hi": 6.19,
+      "threshold": 1.492
+    },
+    "options": {
+      "A": 0.100836,
+      "B": 0.120486,
+      "C": 0.272706,
+      "D": 0.20439,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_27",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.8891, with k(t) = 0.4689 + 0.1052*np.tanh(0.2177*t) and S(t) = 3.0754*np.exp(-0.0959*t) + 1.2099*np.cos(0.8234*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.702, beta=1.2205) (rate parameterization). A reading is valid iff T in [3.07, 8.01] and C(T) > 0.8623. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.4689 + 0.1052*np.tanh(0.2177*t)",
+      "S_expr": "3.0754*np.exp(-0.0959*t) + 1.2099*np.cos(0.8234*t)",
+      "C0": 2.8891,
+      "t_end": 9.01,
+      "gamma_alpha": 3.702,
+      "gamma_beta": 1.2205,
+      "t_lo": 3.07,
+      "t_hi": 8.01,
+      "threshold": 0.8623
+    },
+    "options": {
+      "A": 0.238589,
+      "B": 0.413248,
+      "C": 0.653404,
+      "D": 0.269329,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_28",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.8331, with k(t) = 1.2246 / (1.0 + 0.2942*t) and S(t) = 4.922*np.cos(1.2992*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.4435, beta=0.7325) (rate parameterization). A reading is valid iff T in [1.57, 6.79] and C(T) > 1.5036. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "1.2246 / (1.0 + 0.2942*t)",
+      "S_expr": "4.922*np.cos(1.2992*t)",
+      "C0": 1.8331,
+      "t_end": 7.79,
+      "gamma_alpha": 3.4435,
+      "gamma_beta": 0.7325,
+      "t_lo": 1.57,
+      "t_hi": 6.79,
+      "threshold": 1.5036
+    },
+    "options": {
+      "A": 0.35624,
+      "B": 0.088766,
+      "C": 0.136905,
+      "D": 0.210828,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_29",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 4.5883, with k(t) = 0.3592 + 0.0812*t and S(t) = 4.1028*np.sin(0.7565*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.1894, beta=1.0474) (rate parameterization). A reading is valid iff T in [3.85, 7.11] and C(T) > 1.029. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.3592 + 0.0812*t",
+      "S_expr": "4.1028*np.sin(0.7565*t)",
+      "C0": 4.5883,
+      "t_end": 8.11,
+      "gamma_alpha": 3.1894,
+      "gamma_beta": 1.0474,
+      "t_lo": 3.85,
+      "t_hi": 7.11,
+      "threshold": 1.029
+    },
+    "options": {
+      "A": 0.047579,
+      "B": 0.229798,
+      "C": 0.148237,
+      "D": 0.070049,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_30",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 0.8213, with k(t) = 0.5126 + 0.0636*t and S(t) = 5.5421*np.exp(-0.1688*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.6637, beta=0.7384) (rate parameterization). A reading is valid iff T in [3.36, 8.24] and C(T) > 1.5732. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.5126 + 0.0636*t",
+      "S_expr": "5.5421*np.exp(-0.1688*t)",
+      "C0": 0.8213,
+      "t_end": 9.24,
+      "gamma_alpha": 2.6637,
+      "gamma_beta": 0.7384,
+      "t_lo": 3.36,
+      "t_hi": 8.24,
+      "threshold": 1.5732
+    },
+    "options": {
+      "A": 0.646801,
+      "B": 0.624776,
+      "C": 0.423387,
+      "D": 0.667034,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_31",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.0884, with k(t) = 0.6407 + 0.2811*np.cos(0.5388*t) and S(t) = 4.8476*np.sin(1.3032*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.8031, beta=1.4995) (rate parameterization). A reading is valid iff T in [2.31, 7.1] and C(T) > 1.4429. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.6407 + 0.2811*np.cos(0.5388*t)",
+      "S_expr": "4.8476*np.sin(1.3032*t)",
+      "C0": 3.0884,
+      "t_end": 8.1,
+      "gamma_alpha": 5.8031,
+      "gamma_beta": 1.4995,
+      "t_lo": 2.31,
+      "t_hi": 7.1,
+      "threshold": 1.4429
+    },
+    "options": {
+      "A": 0.22097,
+      "B": 0.087229,
+      "C": 0.130857,
+      "D": 0.328848,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_32",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.9841, with k(t) = 0.482 + 0.2225*np.cos(t) and S(t) = 4.6805 / (1.0 + 0.2644*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=4.7747, beta=0.717) (rate parameterization). A reading is valid iff T in [2.9, 7.38] and C(T) > 1.9068. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.482 + 0.2225*np.cos(t)",
+      "S_expr": "4.6805 / (1.0 + 0.2644*t)",
+      "C0": 1.9841,
+      "t_end": 8.38,
+      "gamma_alpha": 4.7747,
+      "gamma_beta": 0.717,
+      "t_lo": 2.9,
+      "t_hi": 7.38,
+      "threshold": 1.9068
+    },
+    "options": {
+      "A": 0.848304,
+      "B": 0.214418,
+      "C": 0.34291,
+      "D": 0.572432,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_33",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.9715, with k(t) = 0.2325 + 0.2555*np.cos(1.434*t) and S(t) = 3.5016*(1.0 - np.exp(-0.404*t))*np.cos(0.5443*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.7107, beta=0.8819) (rate parameterization). A reading is valid iff T in [2.97, 7.6] and C(T) > 1.487. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.2325 + 0.2555*np.cos(1.434*t)",
+      "S_expr": "3.5016*(1.0 - np.exp(-0.404*t))*np.cos(0.5443*t)",
+      "C0": 2.9715,
+      "t_end": 8.6,
+      "gamma_alpha": 5.7107,
+      "gamma_beta": 0.8819,
+      "t_lo": 2.97,
+      "t_hi": 7.6,
+      "threshold": 1.487
+    },
+    "options": {
+      "A": 0.213187,
+      "B": 0.20463,
+      "C": 0.134595,
+      "D": 0.087679,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_34",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.7672, with k(t) = 0.7184 + 0.1829*np.exp(-0.2475*t) and S(t) = 2.0196*np.exp(-0.1682*t) + 0.5038*np.cos(0.5405*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.3499, beta=1.0379) (rate parameterization). A reading is valid iff T in [2.8, 8.04] and C(T) > 1.4219. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.7184 + 0.1829*np.exp(-0.2475*t)",
+      "S_expr": "2.0196*np.exp(-0.1682*t) + 0.5038*np.cos(0.5405*t)",
+      "C0": 3.7672,
+      "t_end": 9.04,
+      "gamma_alpha": 5.3499,
+      "gamma_beta": 1.0379,
+      "t_lo": 2.8,
+      "t_hi": 8.04,
+      "threshold": 1.4219
+    },
+    "options": {
+      "A": 0.399578,
+      "B": 0.459008,
+      "C": 0.422571,
+      "D": 0.278845,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_35",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 4.8648, with k(t) = 0.7218 + 0.3623*np.sin(1.1605*t) and S(t) = 1.0614*(1.0 - np.exp(-0.1577*t))*np.cos(1.3451*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.2993, beta=1.2597) (rate parameterization). A reading is valid iff T in [1.11, 5.62] and C(T) > 0.7505. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.7218 + 0.3623*np.sin(1.1605*t)",
+      "S_expr": "1.0614*(1.0 - np.exp(-0.1577*t))*np.cos(1.3451*t)",
+      "C0": 4.8648,
+      "t_end": 6.62,
+      "gamma_alpha": 2.2993,
+      "gamma_beta": 1.2597,
+      "t_lo": 1.11,
+      "t_hi": 5.62,
+      "threshold": 0.7505
+    },
+    "options": {
+      "A": 0.450736,
+      "B": 0.274682,
+      "C": 0.461921,
+      "D": 0.425566,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_36",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.2486, with k(t) = 1.4974 / (1.0 + 0.2367*t) and S(t) = 3.935*np.exp(-0.1641*t) + 0.6508*np.cos(0.9335*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.1979, beta=0.4318) (rate parameterization). A reading is valid iff T in [1.7, 6.75] and C(T) > 0.8514. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "1.4974 / (1.0 + 0.2367*t)",
+      "S_expr": "3.935*np.exp(-0.1641*t) + 0.6508*np.cos(0.9335*t)",
+      "C0": 1.2486,
+      "t_end": 7.75,
+      "gamma_alpha": 3.1979,
+      "gamma_beta": 0.4318,
+      "t_lo": 1.7,
+      "t_hi": 6.75,
+      "threshold": 0.8514
+    },
+    "options": {
+      "A": 0.48245,
+      "B": 0.67431,
+      "C": 0.638015,
+      "D": 0.265378,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_37",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.649, with k(t) = 0.5488 + 0.0667*t and S(t) = 2.8446*np.sin(0.6048*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.0376, beta=1.2851) (rate parameterization). A reading is valid iff T in [1.24, 6.85] and C(T) > 1.8321. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.5488 + 0.0667*t",
+      "S_expr": "2.8446*np.sin(0.6048*t)",
+      "C0": 1.649,
+      "t_end": 7.85,
+      "gamma_alpha": 2.0376,
+      "gamma_beta": 1.2851,
+      "t_lo": 1.24,
+      "t_hi": 6.85,
+      "threshold": 1.8321
+    },
+    "options": {
+      "A": 0.216001,
+      "B": 0.669494,
+      "C": 0.853549,
+      "D": 0.503551,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_38",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.8285, with k(t) = 0.712 + 0.132*np.cos(1.072*t) and S(t) = 4.2992 / (1.0 + 0.2982*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.9118, beta=1.1241) (rate parameterization). A reading is valid iff T in [2.37, 6.28] and C(T) > 0.7666. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.712 + 0.132*np.cos(1.072*t)",
+      "S_expr": "4.2992 / (1.0 + 0.2982*t)",
+      "C0": 1.8285,
+      "t_end": 7.28,
+      "gamma_alpha": 5.9118,
+      "gamma_beta": 1.1241,
+      "t_lo": 2.37,
+      "t_hi": 6.28,
+      "threshold": 0.7666
+    },
+    "options": {
+      "A": 0.999999,
+      "B": 0.660414,
+      "C": 0.312791,
+      "D": 0.257366,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_39",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.1419, with k(t) = 0.5769 + 0.371*np.exp(-0.2116*t) and S(t) = 4.1544*np.cos(0.34*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.5256, beta=1.4006) (rate parameterization). A reading is valid iff T in [2.86, 7.89] and C(T) > 0.8554. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.5769 + 0.371*np.exp(-0.2116*t)",
+      "S_expr": "4.1544*np.cos(0.34*t)",
+      "C0": 2.1419,
+      "t_end": 8.89,
+      "gamma_alpha": 2.5256,
+      "gamma_beta": 1.4006,
+      "t_lo": 2.86,
+      "t_hi": 7.89,
+      "threshold": 0.8554
+    },
+    "options": {
+      "A": 0.07925,
+      "B": 0.22453,
+      "C": 0.148465,
+      "D": 0.200853,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_40",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 4.9097, with k(t) = 0.6825 + 0.2405*np.sin(0.6129*t) and S(t) = 4.4406*np.sin(1.1691*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.8691, beta=1.285) (rate parameterization). A reading is valid iff T in [3.9, 7.79] and C(T) > 0.9218. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.6825 + 0.2405*np.sin(0.6129*t)",
+      "S_expr": "4.4406*np.sin(1.1691*t)",
+      "C0": 4.9097,
+      "t_end": 8.79,
+      "gamma_alpha": 5.8691,
+      "gamma_beta": 1.285,
+      "t_lo": 3.9,
+      "t_hi": 7.79,
+      "threshold": 0.9218
+    },
+    "options": {
+      "A": 0.033501,
+      "B": 0.051877,
+      "C": 0.129376,
+      "D": 0.087303,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_41",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 0.7845, with k(t) = 0.5717 + 0.383*np.sin(t) and S(t) = 5.661 / (1.0 + 0.1053*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.2954, beta=1.4003) (rate parameterization). A reading is valid iff T in [1.33, 5.03] and C(T) > 0.8137. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.5717 + 0.383*np.sin(t)",
+      "S_expr": "5.661 / (1.0 + 0.1053*t)",
+      "C0": 0.7845,
+      "t_end": 6.03,
+      "gamma_alpha": 5.2954,
+      "gamma_beta": 1.4003,
+      "t_lo": 1.33,
+      "t_hi": 5.03,
+      "threshold": 0.8137
+    },
+    "options": {
+      "A": 0.52364,
+      "B": 0.999999,
+      "C": 0.767957,
+      "D": 0.412148,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_42",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 4.2516, with k(t) = 0.4226 + 0.3848*np.tanh(0.3786*t) and S(t) = 2.762*np.exp(-0.159*t) + 1.4824*np.cos(1.0969*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=4.4626, beta=1.433) (rate parameterization). A reading is valid iff T in [3.66, 7.07] and C(T) > 0.7756. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.4226 + 0.3848*np.tanh(0.3786*t)",
+      "S_expr": "2.762*np.exp(-0.159*t) + 1.4824*np.cos(1.0969*t)",
+      "C0": 4.2516,
+      "t_end": 8.07,
+      "gamma_alpha": 4.4626,
+      "gamma_beta": 1.433,
+      "t_lo": 3.66,
+      "t_hi": 7.07,
+      "threshold": 0.7756
+    },
+    "options": {
+      "A": 0.123072,
+      "B": 0.151746,
+      "C": 0.290342,
+      "D": 0.10389,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_43",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 0.5961, with k(t) = 0.7694 + 0.3473*np.cos(t) and S(t) = 4.3138*np.exp(-0.1355*t)*np.sin(1.0166*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=5.1472, beta=0.6679) (rate parameterization). A reading is valid iff T in [1.18, 5.01] and C(T) > 0.5141. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.7694 + 0.3473*np.cos(t)",
+      "S_expr": "4.3138*np.exp(-0.1355*t)*np.sin(1.0166*t)",
+      "C0": 0.5961,
+      "t_end": 6.01,
+      "gamma_alpha": 5.1472,
+      "gamma_beta": 0.6679,
+      "t_lo": 1.18,
+      "t_hi": 5.01,
+      "threshold": 0.5141
+    },
+    "options": {
+      "A": 0.078455,
+      "B": 0.137985,
+      "C": 0.050789,
+      "D": 0.065428,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_44",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.957, with k(t) = 0.266 + 0.3599*np.exp(-0.083*t) and S(t) = 5.1599 / (1.0 + 0.1095*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.697, beta=0.4576) (rate parameterization). A reading is valid iff T in [3.96, 8.58] and C(T) > 1.5609. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.266 + 0.3599*np.exp(-0.083*t)",
+      "S_expr": "5.1599 / (1.0 + 0.1095*t)",
+      "C0": 1.957,
+      "t_end": 9.58,
+      "gamma_alpha": 2.697,
+      "gamma_beta": 0.4576,
+      "t_lo": 3.96,
+      "t_hi": 8.58,
+      "threshold": 1.5609
+    },
+    "options": {
+      "A": 0.460163,
+      "B": 0.685872,
+      "C": 0.238916,
+      "D": 0.22528,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_45",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 0.8636, with k(t) = 0.7992 + 0.3542*np.sin(t) and S(t) = 3.0583*np.exp(-0.1235*t) + 0.6102*np.cos(1.1187*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=4.4332, beta=0.4723) (rate parameterization). A reading is valid iff T in [2.37, 8.26] and C(T) > 0.7675. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.7992 + 0.3542*np.sin(t)",
+      "S_expr": "3.0583*np.exp(-0.1235*t) + 0.6102*np.cos(1.1187*t)",
+      "C0": 0.8636,
+      "t_end": 9.26,
+      "gamma_alpha": 4.4332,
+      "gamma_beta": 0.4723,
+      "t_lo": 2.37,
+      "t_hi": 8.26,
+      "threshold": 0.7675
+    },
+    "options": {
+      "A": 0.645934,
+      "B": 0.444747,
+      "C": 0.658887,
+      "D": 0.690795,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_46",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.4204, with k(t) = 0.515 + 0.091*t and S(t) = 2.0168*np.exp(-0.118*t) + 0.6426*np.cos(0.6744*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=4.6604, beta=0.8117) (rate parameterization). A reading is valid iff T in [3.56, 8.51] and C(T) > 0.5595. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.515 + 0.091*t",
+      "S_expr": "2.0168*np.exp(-0.118*t) + 0.6426*np.cos(0.6744*t)",
+      "C0": 2.4204,
+      "t_end": 9.51,
+      "gamma_alpha": 4.6604,
+      "gamma_beta": 0.8117,
+      "t_lo": 3.56,
+      "t_hi": 8.51,
+      "threshold": 0.5595
+    },
+    "options": {
+      "A": 0.641941,
+      "B": 0.212358,
+      "C": 0.999999,
+      "D": 0.425934,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_47",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.0824, with k(t) = 0.602 + 0.2232*np.sin(1.8104*t) and S(t) = 3.6043*np.exp(-0.1582*t) + 1.4006*np.cos(1.1716*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=4.3117, beta=0.634) (rate parameterization). A reading is valid iff T in [2.76, 7.44] and C(T) > 1.4165. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.602 + 0.2232*np.sin(1.8104*t)",
+      "S_expr": "3.6043*np.exp(-0.1582*t) + 1.4006*np.cos(1.1716*t)",
+      "C0": 2.0824,
+      "t_end": 8.44,
+      "gamma_alpha": 4.3117,
+      "gamma_beta": 0.634,
+      "t_lo": 2.76,
+      "t_hi": 7.44,
+      "threshold": 1.4165
+    },
+    "options": {
+      "A": 0.759393,
+      "B": 0.344335,
+      "C": 0.564204,
+      "D": 0.812479,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_48",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 1.3163, with k(t) = 0.529 / (1.0 + 0.1183*t) and S(t) = 4.6862*np.cos(0.7212*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.573, beta=1.1231) (rate parameterization). A reading is valid iff T in [2.83, 7.8] and C(T) > 0.4183. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.529 / (1.0 + 0.1183*t)",
+      "S_expr": "4.6862*np.cos(0.7212*t)",
+      "C0": 1.3163,
+      "t_end": 8.8,
+      "gamma_alpha": 2.573,
+      "gamma_beta": 1.1231,
+      "t_lo": 2.83,
+      "t_hi": 7.8,
+      "threshold": 0.4183
+    },
+    "options": {
+      "A": 0.100927,
+      "B": 0.066945,
+      "C": 0.040735,
+      "D": 0.146392,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_49",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 3.197, with k(t) = 1.1782 / (1.0 + 0.1983*t) and S(t) = 1.1817*np.cos(0.7743*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=2.0307, beta=0.7316) (rate parameterization). A reading is valid iff T in [1.34, 5.63] and C(T) > 0.6591. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "1.1782 / (1.0 + 0.1983*t)",
+      "S_expr": "1.1817*np.cos(0.7743*t)",
+      "C0": 3.197,
+      "t_end": 6.63,
+      "gamma_alpha": 2.0307,
+      "gamma_beta": 0.7316,
+      "t_lo": 1.34,
+      "t_hi": 5.63,
+      "threshold": 0.6591
+    },
+    "options": {
+      "A": 0.338549,
+      "B": 0.259804,
+      "C": 0.352007,
+      "D": 0.151783,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "STOCH_50",
+    "domain": "stochastic_reactor",
+    "question": "A chemical reactor's concentration C(t) evolves under the ODE dC/dt = -k(t)*C(t) + S(t), C(0) = 2.4318, with k(t) = 0.2432 + 0.3585*np.sin(0.5635*t) and S(t) = 3.2988*np.exp(-0.034*t)*np.cos(0.6757*t). A sensor measures the concentration at a random time T ~ Gamma(alpha=3.6177, beta=1.1042) (rate parameterization). A reading is valid iff T in [2.6, 6.29] and C(T) > 0.7922. Compute P = Pr(valid) to 6 decimal places.",
+    "params": {
+      "k_expr": "0.2432 + 0.3585*np.sin(0.5635*t)",
+      "S_expr": "3.2988*np.exp(-0.034*t)*np.cos(0.6757*t)",
+      "C0": 2.4318,
+      "t_end": 7.29,
+      "gamma_alpha": 3.6177,
+      "gamma_beta": 1.1042,
+      "t_lo": 2.6,
+      "t_hi": 6.29,
+      "threshold": 0.7922
+    },
+    "options": {
+      "A": 0.314452,
+      "B": 0.192583,
+      "C": 0.263598,
+      "D": 0.281559,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_51",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = 0.1225*u[0]**2 + 0.3475*u[1]**2 + 0.3009*u[2]**2 + 0.7628*u[3]**3, with initial conditions y(0)=2.1917, y'(0)=2.7304, y''(0)=0.7173, y'''(0)=1.5548. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.1225*u[0]**2 + 0.3475*u[1]**2 + 0.3009*u[2]**2 + 0.7628*u[3]**3",
+      "initial_conditions": [
+        2.1917,
+        2.7304,
+        0.7173,
+        1.5548
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        2.18
+      ],
+      "threshold": 85240.02601017215
+    },
+    "options": {
+      "A": 0.267134,
+      "B": 0.30528,
+      "C": 0.192435,
+      "D": 0.088365,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_52",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = 0.2399*u[0]*u[2] + 1.9187*u[1]**4, with initial conditions y(0)=1.3415, y'(0)=0.7319, y''(0)=0.7418. The solution y''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.2399*u[0]*u[2] + 1.9187*u[1]**4",
+      "initial_conditions": [
+        1.3415,
+        0.7319,
+        0.7418
+      ],
+      "blowup_index": 2,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        7.08
+      ],
+      "threshold": 114309.80105063858
+    },
+    "options": {
+      "A": 1.480058,
+      "B": 1.287428,
+      "C": 0.977264,
+      "D": 1.301247,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_53",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = x + 0.1412*u[0]**2 + 0.3051*u[1]**3 + 0.3604*u[2]**3, with initial conditions y(0)=0.6995, y'(0)=1.082, y''(0)=0.7525, y'''(0)=1.1949. The solution y''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x + 0.1412*u[0]**2 + 0.3051*u[1]**3 + 0.3604*u[2]**3",
+      "initial_conditions": [
+        0.6995,
+        1.082,
+        0.7525,
+        1.1949
+      ],
+      "blowup_index": 2,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        5.81
+      ],
+      "threshold": 44731.80145889577
+    },
+    "options": {
+      "A": 0.736518,
+      "B": 1.61394,
+      "C": 2.327476,
+      "D": 0.67668,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_54",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = 0.9906*u[0]*u[2] + 1.316*u[1]**4, with initial conditions y(0)=1.8924, y'(0)=2.2115, y''(0)=2.6071. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.9906*u[0]*u[2] + 1.316*u[1]**4",
+      "initial_conditions": [
+        1.8924,
+        2.2115,
+        2.6071
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        6.66
+      ],
+      "threshold": 19373602.108301383
+    },
+    "options": {
+      "A": 0.483439,
+      "B": 0.298048,
+      "C": 0.496326,
+      "D": 0.176714,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_55",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = 0.513/(u[0] + 1e-12) + 1.1622*u[1]**3, with initial conditions y(0)=1.1166, y'(0)=1.9034, y''(0)=1.1569. The solution y''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.513/(u[0] + 1e-12) + 1.1622*u[1]**3",
+      "initial_conditions": [
+        1.1166,
+        1.9034,
+        1.1569
+      ],
+      "blowup_index": 2,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        5.51
+      ],
+      "threshold": 395915.05872462835
+    },
+    "options": {
+      "A": 0.782119,
+      "B": 0.478869,
+      "C": 0.311039,
+      "D": 0.388079,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_56",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = np.sin(1.3946*x)*u[0] + 1.4619*u[1]**3 + 0.6363*u[2]**2, with initial conditions y(0)=1.6701, y'(0)=1.1285, y''(0)=1.8831, y'''(0)=2.8561. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "np.sin(1.3946*x)*u[0] + 1.4619*u[1]**3 + 0.6363*u[2]**2",
+      "initial_conditions": [
+        1.6701,
+        1.1285,
+        1.8831,
+        2.8561
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        6.08
+      ],
+      "threshold": 5331402.559069891
+    },
+    "options": {
+      "A": 1.875042,
+      "B": 2.112336,
+      "C": 1.394476,
+      "D": 2.241536,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_57",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = x - 0.3371*u[0]/(2.0012*x + 0.0) + 0.768*u[1]**2 + 2.7816*u[2]**5, with initial conditions y(0)=1.2461, y'(0)=2.0974, y''(0)=2.0224, y'''(0)=0.8821. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x - 0.3371*u[0]/(2.0012*x + 0.0) + 0.768*u[1]**2 + 2.7816*u[2]**5",
+      "initial_conditions": [
+        1.2461,
+        2.0974,
+        2.0224,
+        0.8821
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        6.58
+      ],
+      "threshold": 2487587.3396279844
+    },
+    "options": {
+      "A": 0.120191,
+      "B": 0.332523,
+      "C": 0.19892,
+      "D": 0.100367,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_58",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = x + np.cos(0.6926*u[0]) + 1.6882*u[1]**3, with initial conditions y(0)=1.8745, y'(0)=1.1626. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x + np.cos(0.6926*u[0]) + 1.6882*u[1]**3",
+      "initial_conditions": [
+        1.8745,
+        1.1626
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        7.23
+      ],
+      "threshold": 72019752.41208017
+    },
+    "options": {
+      "A": 0.069174,
+      "B": 0.333864,
+      "C": 0.357639,
+      "D": 0.210616,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_59",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = x + np.cos(0.837*u[0]) + 1.3452*u[1]**3, with initial conditions y(0)=1.9708, y'(0)=1.0753. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x + np.cos(0.837*u[0]) + 1.3452*u[1]**3",
+      "initial_conditions": [
+        1.9708,
+        1.0753
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        3.32
+      ],
+      "threshold": 6782093.7091794135
+    },
+    "options": {
+      "A": 0.221822,
+      "B": 0.545058,
+      "C": 0.32792,
+      "D": 0.22025,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_60",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = x + np.cos(1.585*u[0]) + 2.706*u[1]**3, with initial conditions y(0)=1.9405, y'(0)=1.1075. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x + np.cos(1.585*u[0]) + 2.706*u[1]**3",
+      "initial_conditions": [
+        1.9405,
+        1.1075
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        4.84
+      ],
+      "threshold": 57761.65888415969
+    },
+    "options": {
+      "A": 0.086887,
+      "B": 0.244093,
+      "C": 0.169307,
+      "D": 0.226664,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_61",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = 0.8205*u[1]**2*u[3] + 0.1983*u[2]**3, with initial conditions y(0)=0.979, y'(0)=1.8407, y''(0)=0.8505, y'''(0)=0.9587. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.8205*u[1]**2*u[3] + 0.1983*u[2]**3",
+      "initial_conditions": [
+        0.979,
+        1.8407,
+        0.8505,
+        0.9587
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        4.78
+      ],
+      "threshold": 592274.4255954182
+    },
+    "options": {
+      "A": 0.340759,
+      "B": 0.299481,
+      "C": 0.958642,
+      "D": 0.651651,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_62",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = 0.8782*u[0]**2*u[1] + 2.7561*u[2]**3, with initial conditions y(0)=0.9116, y'(0)=0.5054, y''(0)=1.4761. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.8782*u[0]**2*u[1] + 2.7561*u[2]**3",
+      "initial_conditions": [
+        0.9116,
+        0.5054,
+        1.4761
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        7.56
+      ],
+      "threshold": 138355.65533868494
+    },
+    "options": {
+      "A": 0.081764,
+      "B": 0.111356,
+      "C": 0.050115,
+      "D": 0.129076,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_63",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = x + np.cos(1.1057*u[0]) + 2.854*u[1]**3, with initial conditions y(0)=1.9242, y'(0)=1.9473. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x + np.cos(1.1057*u[0]) + 2.854*u[1]**3",
+      "initial_conditions": [
+        1.9242,
+        1.9473
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        2.24
+      ],
+      "threshold": 475225.4179881875
+    },
+    "options": {
+      "A": 0.07159,
+      "B": 0.073197,
+      "C": 0.046685,
+      "D": 0.015225,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_64",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = x - 0.7459*u[0]*u[1] + 0.2832*u[1]**2 + 2.0856*u[2]**3, with initial conditions y(0)=1.16, y'(0)=1.7213, y''(0)=2.7633, y'''(0)=2.6153. The solution y'''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x - 0.7459*u[0]*u[1] + 0.2832*u[1]**2 + 2.0856*u[2]**3",
+      "initial_conditions": [
+        1.16,
+        1.7213,
+        2.7633,
+        2.6153
+      ],
+      "blowup_index": 3,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        2.55
+      ],
+      "threshold": 20767889.17096016
+    },
+    "options": {
+      "A": 0.670083,
+      "B": 0.548929,
+      "C": 0.568509,
+      "D": 0.416602,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_65",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.9505*x**2 - 0.7219*u[0]**3 + 0.8726*u[1]**4, with initial conditions y(0)=0.5901, y'(0)=1.423. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.9505*x**2 - 0.7219*u[0]**3 + 0.8726*u[1]**4",
+      "initial_conditions": [
+        0.5901,
+        1.423
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        5.32
+      ],
+      "threshold": 32343.132290925765
+    },
+    "options": {
+      "A": 0.078386,
+      "B": 0.046272,
+      "C": 0.135923,
+      "D": 0.058063,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_66",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = x - 0.2391*u[0]/(2.8598*x + 0.0) + 1.7969*u[1]**2 + 2.9405*u[2]**5, with initial conditions y(0)=2.7035, y'(0)=0.562, y''(0)=2.3414, y'''(0)=1.3305. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x - 0.2391*u[0]/(2.8598*x + 0.0) + 1.7969*u[1]**2 + 2.9405*u[2]**5",
+      "initial_conditions": [
+        2.7035,
+        0.562,
+        2.3414,
+        1.3305
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        7.58
+      ],
+      "threshold": 116740.84657471335
+    },
+    "options": {
+      "A": 0.053327,
+      "B": 0.049382,
+      "C": 0.138494,
+      "D": 0.075754,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_67",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = 1.0573*u[1]*u[2] + 0.694*u[0]**3 + 0.4586*x, with initial conditions y(0)=1.1965, y'(0)=0.6736, y''(0)=2.4333. The solution y''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "1.0573*u[1]*u[2] + 0.694*u[0]**3 + 0.4586*x",
+      "initial_conditions": [
+        1.1965,
+        0.6736,
+        2.4333
+      ],
+      "blowup_index": 2,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        4.11
+      ],
+      "threshold": 396929.6465535607
+    },
+    "options": {
+      "A": 1.734462,
+      "B": 1.024817,
+      "C": 1.691784,
+      "D": 0.332353,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_68",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = np.sin(0.5025*x)*u[0] + 2.8139*u[1]**3 + 0.5846*u[2]**2, with initial conditions y(0)=2.2986, y'(0)=2.3549, y''(0)=2.1766, y'''(0)=1.4106. The solution y''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "np.sin(0.5025*x)*u[0] + 2.8139*u[1]**3 + 0.5846*u[2]**2",
+      "initial_conditions": [
+        2.2986,
+        2.3549,
+        2.1766,
+        1.4106
+      ],
+      "blowup_index": 2,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        2.42
+      ],
+      "threshold": 3109006.5698837875
+    },
+    "options": {
+      "A": 0.433251,
+      "B": 0.996793,
+      "C": 1.582809,
+      "D": 1.498029,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_69",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = x**2 + 0.2727*u[1]**3 + 0.6984*u[2]**4, with initial conditions y(0)=1.4479, y'(0)=2.3703, y''(0)=0.9351, y'''(0)=1.9228. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x**2 + 0.2727*u[1]**3 + 0.6984*u[2]**4",
+      "initial_conditions": [
+        1.4479,
+        2.3703,
+        0.9351,
+        1.9228
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        4.44
+      ],
+      "threshold": 164247.88922167863
+    },
+    "options": {
+      "A": 0.728223,
+      "B": 1.007914,
+      "C": 1.143493,
+      "D": 1.082136,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_70",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = np.exp(0.2992*u[1]) + 0.6573*u[2]**3 - 0.184*u[0], with initial conditions y(0)=2.88, y'(0)=1.0872, y''(0)=1.276. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "np.exp(0.2992*u[1]) + 0.6573*u[2]**3 - 0.184*u[0]",
+      "initial_conditions": [
+        2.88,
+        1.0872,
+        1.276
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        6.84
+      ],
+      "threshold": 12522.803066024024
+    },
+    "options": {
+      "A": 0.528851,
+      "B": 0.195901,
+      "C": 0.172316,
+      "D": 0.378308,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_71",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = x + np.cos(1.4841*u[0]) + 0.5139*u[1]**3, with initial conditions y(0)=2.3774, y'(0)=2.4251. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x + np.cos(1.4841*u[0]) + 0.5139*u[1]**3",
+      "initial_conditions": [
+        2.3774,
+        2.4251
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        2.64
+      ],
+      "threshold": 75052.39355875355
+    },
+    "options": {
+      "A": 0.057572,
+      "B": 0.117545,
+      "C": 0.280355,
+      "D": 0.172883,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_72",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = np.exp(0.4952*u[1]) - 0.6359*u[0] + 0.955*x, with initial conditions y(0)=2.7286, y'(0)=2.0316, y''(0)=2.2982, y'''(0)=1.7619. The solution y'''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "np.exp(0.4952*u[1]) - 0.6359*u[0] + 0.955*x",
+      "initial_conditions": [
+        2.7286,
+        2.0316,
+        2.2982,
+        1.7619
+      ],
+      "blowup_index": 3,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        6.98
+      ],
+      "threshold": 38800061.407107994
+    },
+    "options": {
+      "A": 1.03582,
+      "B": 3.182255,
+      "C": 3.258916,
+      "D": 1.992069,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_73",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.4734*x**2 - 0.3978*u[0]**3 + 1.6648*u[1]**4, with initial conditions y(0)=0.6557, y'(0)=2.5822. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.4734*x**2 - 0.3978*u[0]**3 + 1.6648*u[1]**4",
+      "initial_conditions": [
+        0.6557,
+        2.5822
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        4.34
+      ],
+      "threshold": 26725640.93184491
+    },
+    "options": {
+      "A": 0.005641,
+      "B": 0.017348,
+      "C": 0.018692,
+      "D": 0.011637,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_74",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = 0.1261*np.exp(0.2345*u[2]) + 0.7112*u[1]**2, with initial conditions y(0)=1.5108, y'(0)=0.9126, y''(0)=1.6685. The solution y''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.1261*np.exp(0.2345*u[2]) + 0.7112*u[1]**2",
+      "initial_conditions": [
+        1.5108,
+        0.9126,
+        1.6685
+      ],
+      "blowup_index": 2,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        2.77
+      ],
+      "threshold": 1369287.104493848
+    },
+    "options": {
+      "A": 2.210206,
+      "B": 1.632016,
+      "C": 0.550362,
+      "D": 2.176422,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_75",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = x + np.cos(0.8175*u[0]) + 1.3171*u[1]**3, with initial conditions y(0)=2.4031, y'(0)=1.4478, y''(0)=2.38. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x + np.cos(0.8175*u[0]) + 1.3171*u[1]**3",
+      "initial_conditions": [
+        2.4031,
+        1.4478,
+        2.38
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        6.99
+      ],
+      "threshold": 21859672.930551674
+    },
+    "options": {
+      "A": 1.356027,
+      "B": 0.486833,
+      "C": 0.79768,
+      "D": 0.408314,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_76",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.8*x**2 - 0.2474*u[0]**3 + 1.2776*u[1]**4, with initial conditions y(0)=1.9467, y'(0)=2.8222. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.8*x**2 - 0.2474*u[0]**3 + 1.2776*u[1]**4",
+      "initial_conditions": [
+        1.9467,
+        2.8222
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        5.45
+      ],
+      "threshold": 386027.07497154817
+    },
+    "options": {
+      "A": 0.011723,
+      "B": 0.015718,
+      "C": 0.004853,
+      "D": 0.016868,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_77",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.8401/(u[0] + 1e-12) + 0.7638*u[1]**3, with initial conditions y(0)=2.902, y'(0)=2.089. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.8401/(u[0] + 1e-12) + 0.7638*u[1]**3",
+      "initial_conditions": [
+        2.902,
+        2.089
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        6.97
+      ],
+      "threshold": 552012.0778136385
+    },
+    "options": {
+      "A": 0.228332,
+      "B": 0.147657,
+      "C": 0.235294,
+      "D": 0.219411,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_78",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = x + np.cos(0.9195*u[0]) + 1.9904*u[1]**3, with initial conditions y(0)=2.7003, y'(0)=1.8895, y''(0)=1.7916. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x + np.cos(0.9195*u[0]) + 1.9904*u[1]**3",
+      "initial_conditions": [
+        2.7003,
+        1.8895,
+        1.7916
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        3.15
+      ],
+      "threshold": 7590994.144406018
+    },
+    "options": {
+      "A": 0.31195,
+      "B": 0.599063,
+      "C": 0.944269,
+      "D": 0.302269,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_79",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = 0.319/(x + 1e-12) + 0.6976*u[0]**2 + 1.4226*u[2]**3, with initial conditions y(0)=1.8837, y'(0)=1.3594, y''(0)=2.9916. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.319/(x + 1e-12) + 0.6976*u[0]**2 + 1.4226*u[2]**3",
+      "initial_conditions": [
+        1.8837,
+        1.3594,
+        2.9916
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        5.3
+      ],
+      "threshold": 6477684.159331305
+    },
+    "options": {
+      "A": 0.011058,
+      "B": 0.006721,
+      "C": 0.015574,
+      "D": 0.003404,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_80",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = x**2 + 0.8854*u[1]**3 + 0.6167*u[2]**4, with initial conditions y(0)=1.6735, y'(0)=1.6012, y''(0)=0.9609. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x**2 + 0.8854*u[1]**3 + 0.6167*u[2]**4",
+      "initial_conditions": [
+        1.6735,
+        1.6012,
+        0.9609
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        2.31
+      ],
+      "threshold": 28598.849539815492
+    },
+    "options": {
+      "A": 0.135376,
+      "B": 0.274782,
+      "C": 0.201943,
+      "D": 0.267804,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_81",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = 0.4746/(x + 1e-12) + 0.6365*u[0]**2 + 2.046*u[2]**3, with initial conditions y(0)=2.4392, y'(0)=1.4509, y''(0)=2.7713, y'''(0)=1.2434. The solution y'''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.4746/(x + 1e-12) + 0.6365*u[0]**2 + 2.046*u[2]**3",
+      "initial_conditions": [
+        2.4392,
+        1.4509,
+        2.7713,
+        1.2434
+      ],
+      "blowup_index": 3,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        5.53
+      ],
+      "threshold": 166540.92683846914
+    },
+    "options": {
+      "A": 0.114579,
+      "B": 0.553397,
+      "C": 0.356983,
+      "D": 0.16121,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_82",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.2409*x**2 - 0.4677*u[0]**3 + 2.2234*u[1]**4, with initial conditions y(0)=1.6748, y'(0)=0.5816. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.2409*x**2 - 0.4677*u[0]**3 + 2.2234*u[1]**4",
+      "initial_conditions": [
+        1.6748,
+        0.5816
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        3.73
+      ],
+      "threshold": 6485601.080683066
+    },
+    "options": {
+      "A": 1.585025,
+      "B": 1.550459,
+      "C": 2.990927,
+      "D": 0.988309,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_83",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.2493*x**2 - 0.3769*u[0]**3 + 2.3724*u[1]**4, with initial conditions y(0)=1.923, y'(0)=1.2215. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.2493*x**2 - 0.3769*u[0]**3 + 2.3724*u[1]**4",
+      "initial_conditions": [
+        1.923,
+        1.2215
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        2.75
+      ],
+      "threshold": 6294115.9600450015
+    },
+    "options": {
+      "A": 0.055284,
+      "B": 0.105323,
+      "C": 0.176634,
+      "D": 0.174391,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_84",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.9996*x**2 - 0.7051*u[0]**3 + 1.1738*u[1]**4, with initial conditions y(0)=0.6006, y'(0)=2.3907. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.9996*x**2 - 0.7051*u[0]**3 + 1.1738*u[1]**4",
+      "initial_conditions": [
+        0.6006,
+        2.3907
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        4.82
+      ],
+      "threshold": 46162694.62815356
+    },
+    "options": {
+      "A": 0.02858,
+      "B": 0.020822,
+      "C": 0.032356,
+      "D": 0.03514,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_85",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = x - 0.1941*u[0]/(1.3216*x + 0.0) + 1.1175*u[1]**2 + 1.7387*u[2]**5, with initial conditions y(0)=1.5011, y'(0)=2.4012, y''(0)=0.5917. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x - 0.1941*u[0]/(1.3216*x + 0.0) + 1.1175*u[1]**2 + 1.7387*u[2]**5",
+      "initial_conditions": [
+        1.5011,
+        2.4012,
+        0.5917
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        2.53
+      ],
+      "threshold": 196379.045633282
+    },
+    "options": {
+      "A": 0.012011,
+      "B": 0.053027,
+      "C": 0.057268,
+      "D": 0.033925,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_86",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = np.sin(1.434*u[1]) + 1.7462*u[2]**4, with initial conditions y(0)=1.6051, y'(0)=0.629, y''(0)=1.1676, y'''(0)=0.8275. The solution y'''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "np.sin(1.434*u[1]) + 1.7462*u[2]**4",
+      "initial_conditions": [
+        1.6051,
+        0.629,
+        1.1676,
+        0.8275
+      ],
+      "blowup_index": 3,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        3.73
+      ],
+      "threshold": 30598.795664047055
+    },
+    "options": {
+      "A": 1.04809,
+      "B": 1.00602,
+      "C": 0.661709,
+      "D": 0.20562,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_87",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = x**2 + 0.6829*u[1]**3 + 0.2386*u[2]**4, with initial conditions y(0)=2.8316, y'(0)=1.2297, y''(0)=2.2635. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x**2 + 0.6829*u[1]**3 + 0.2386*u[2]**4",
+      "initial_conditions": [
+        2.8316,
+        1.2297,
+        2.2635
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        4.49
+      ],
+      "threshold": 83363997.21505833
+    },
+    "options": {
+      "A": 0.065855,
+      "B": 0.179867,
+      "C": 0.05974,
+      "D": 0.109301,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_88",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = 0.5891/(x + 1e-12) + 0.5098*u[0]**2 + 1.3044*u[2]**3, with initial conditions y(0)=0.9716, y'(0)=2.2437, y''(0)=1.9295, y'''(0)=1.0839. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.5891/(x + 1e-12) + 0.5098*u[0]**2 + 1.3044*u[2]**3",
+      "initial_conditions": [
+        0.9716,
+        2.2437,
+        1.9295,
+        1.0839
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        6.65
+      ],
+      "threshold": 187372.265975082
+    },
+    "options": {
+      "A": 0.735761,
+      "B": 0.494068,
+      "C": 0.247957,
+      "D": 0.269548,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_89",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.1897/(u[0] + 1e-12) + 2.7761*u[1]**3, with initial conditions y(0)=0.5384, y'(0)=0.8604. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.1897/(u[0] + 1e-12) + 2.7761*u[1]**3",
+      "initial_conditions": [
+        0.5384,
+        0.8604
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        7.23
+      ],
+      "threshold": 19921.085203448372
+    },
+    "options": {
+      "A": 0.36708,
+      "B": 0.355089,
+      "C": 0.326747,
+      "D": 0.227631,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_90",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = 0.6557*x**2 - 0.3113*u[0]**3 + 2.211*u[1]**4, with initial conditions y(0)=1.2184, y'(0)=1.0687, y''(0)=0.7259, y'''(0)=2.9458. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.6557*x**2 - 0.3113*u[0]**3 + 2.211*u[1]**4",
+      "initial_conditions": [
+        1.2184,
+        1.0687,
+        0.7259,
+        2.9458
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        6.56
+      ],
+      "threshold": 595270.2889520066
+    },
+    "options": {
+      "A": 0.836202,
+      "B": 1.738823,
+      "C": 0.518206,
+      "D": 1.226815,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_91",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = np.sin(1.3489*x)*u[0] + 2.4813*u[1]**3 + 0.253*u[2]**2, with initial conditions y(0)=0.6974, y'(0)=2.6771, y''(0)=2.0493, y'''(0)=1.1021. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "np.sin(1.3489*x)*u[0] + 2.4813*u[1]**3 + 0.253*u[2]**2",
+      "initial_conditions": [
+        0.6974,
+        2.6771,
+        2.0493,
+        1.1021
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        7.48
+      ],
+      "threshold": 84869.91694714504
+    },
+    "options": {
+      "A": 0.616501,
+      "B": 1.603625,
+      "C": 1.031163,
+      "D": 1.71128,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_92",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.9507/(u[0] + 1e-12) + 2.9691*u[1]**3, with initial conditions y(0)=1.2479, y'(0)=2.9051. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.9507/(u[0] + 1e-12) + 2.9691*u[1]**3",
+      "initial_conditions": [
+        1.2479,
+        2.9051
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        6.14
+      ],
+      "threshold": 24055572.688803777
+    },
+    "options": {
+      "A": 0.019873,
+      "B": 0.007128,
+      "C": 0.030404,
+      "D": 0.027419,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_93",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = x - 0.6093*u[0] + 2.2145*u[1]**2 + 2.3617*u[2]**5, with initial conditions y(0)=0.6226, y'(0)=2.016, y''(0)=1.7418. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x - 0.6093*u[0] + 2.2145*u[1]**2 + 2.3617*u[2]**5",
+      "initial_conditions": [
+        0.6226,
+        2.016,
+        1.7418
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        7.42
+      ],
+      "threshold": 12675465.525454193
+    },
+    "options": {
+      "A": 0.006416,
+      "B": 0.010477,
+      "C": 0.004732,
+      "D": 0.014584,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_94",
+    "domain": "ode_blowup",
+    "question": "Consider the third-order ODE: y''' = np.exp(0.2505*u[1]) + 0.3453*u[2]**3 - 0.2481*u[0], with initial conditions y(0)=2.7851, y'(0)=2.8605, y''(0)=2.9185. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "np.exp(0.2505*u[1]) + 0.3453*u[2]**3 - 0.2481*u[0]",
+      "initial_conditions": [
+        2.7851,
+        2.8605,
+        2.9185
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        3.77
+      ],
+      "threshold": 16478973.464700632
+    },
+    "options": {
+      "A": 0.159879,
+      "B": 0.102914,
+      "C": 0.081965,
+      "D": 0.26285,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_95",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.1225/(u[0] + 1e-12) + 2.7106*u[1]**3, with initial conditions y(0)=1.9035, y'(0)=2.7881. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.1225/(u[0] + 1e-12) + 2.7106*u[1]**3",
+      "initial_conditions": [
+        1.9035,
+        2.7881
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        3.33
+      ],
+      "threshold": 3480292.0504265944
+    },
+    "options": {
+      "A": 0.02372,
+      "B": 0.035241,
+      "C": 0.010444,
+      "D": 0.015278,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_96",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = x + np.cos(1.8309*u[0]) + 0.8392*u[1]**3, with initial conditions y(0)=1.6341, y'(0)=2.1762. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x + np.cos(1.8309*u[0]) + 0.8392*u[1]**3",
+      "initial_conditions": [
+        1.6341,
+        2.1762
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        6.46
+      ],
+      "threshold": 2235431.5813715523
+    },
+    "options": {
+      "A": 0.131761,
+      "B": 0.205807,
+      "C": 0.203737,
+      "D": 0.209584,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_97",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.5002/(u[0] + 1e-12) + 1.0903*u[1]**3, with initial conditions y(0)=1.4067, y'(0)=2.9523. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.5002/(u[0] + 1e-12) + 1.0903*u[1]**3",
+      "initial_conditions": [
+        1.4067,
+        2.9523
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": true,
+      "t_span": [
+        0,
+        4.2
+      ],
+      "threshold": 17466.277533110824
+    },
+    "options": {
+      "A": 0.034732,
+      "B": 0.087944,
+      "C": 0.05236,
+      "D": 0.030874,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_98",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = x + np.cos(1.6805*u[0]) + 1.013*u[1]**3, with initial conditions y(0)=2.5745, y'(0)=1.8855. The solution y(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "x + np.cos(1.6805*u[0]) + 1.013*u[1]**3",
+      "initial_conditions": [
+        2.5745,
+        1.8855
+      ],
+      "blowup_index": 0,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        5.52
+      ],
+      "threshold": 206176.04940248723
+    },
+    "options": {
+      "A": 0.140458,
+      "B": 0.238078,
+      "C": 0.090031,
+      "D": 0.082742,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_99",
+    "domain": "ode_blowup",
+    "question": "Consider the second-order ODE: y'' = 0.4224*x**2 - 0.8096*u[0]**3 + 1.9721*u[1]**4, with initial conditions y(0)=0.5395, y'(0)=1.1634. The solution y'(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.4224*x**2 - 0.8096*u[0]**3 + 1.9721*u[1]**4",
+      "initial_conditions": [
+        0.5395,
+        1.1634
+      ],
+      "blowup_index": 1,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        2.76
+      ],
+      "threshold": 1271575.3676859785
+    },
+    "options": {
+      "A": 0.161897,
+      "B": 0.174916,
+      "C": 0.054141,
+      "D": 0.109441,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "BLOWUP_100",
+    "domain": "ode_blowup",
+    "question": "Consider the fourth-order ODE: y'''' = 0.7545*x**2 - 0.9179*u[0]**3 + 2.1473*u[1]**4, with initial conditions y(0)=1.2541, y'(0)=2.1084, y''(0)=0.5779, y'''(0)=2.9965. The solution y'''(x) blows up at a finite point x*. Find x*, rounded to 6 decimal places.",
+    "params": {
+      "ode_rhs": "0.7545*x**2 - 0.9179*u[0]**3 + 2.1473*u[1]**4",
+      "initial_conditions": [
+        1.2541,
+        2.1084,
+        0.5779,
+        2.9965
+      ],
+      "blowup_index": 3,
+      "has_origin_singularity": false,
+      "t_span": [
+        0,
+        7.08
+      ],
+      "threshold": 5551239.749523566
+    },
+    "options": {
+      "A": 0.485079,
+      "B": 0.56954,
+      "C": 0.849294,
+      "D": 1.270635,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_101",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{60.60} \\frac{1}{\\epsilon + 3.2 x^{2} + 2.3 x^{4} + 1.9 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 59.083$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 3.2,
+        "4": 2.3,
+        "6": 1.9
+      },
+      "L": 60.6,
+      "epsilon": 59.083,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 0.48,
+      "B": 1.03,
+      "C": 0.63,
+      "D": 0.71,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_102",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{65.40} \\frac{1}{\\epsilon + 8.3 x^{4} + 1.1 x^{8}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.035$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "4": 8.3,
+        "8": 1.1
+      },
+      "L": 65.4,
+      "epsilon": 0.035,
+      "regime": "small"
+    },
+    "options": {
+      "A": 18.57,
+      "B": 24.9,
+      "C": 25.74,
+      "D": 10.47,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_103",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{78.00} \\frac{1}{\\epsilon + 7.6 x^{3} + 5.8 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 44.068$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 7.6,
+        "6": 5.8
+      },
+      "L": 78.0,
+      "epsilon": 44.068,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 0.83,
+      "B": 1.77,
+      "C": 2.69,
+      "D": 1.21,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_104",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{57.60} \\frac{1}{\\epsilon + 2.5 x^{3} + 4.2 x^{6} + 7.0 x^{8}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.034$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 2.5,
+        "6": 4.2,
+        "8": 7.0
+      },
+      "L": 57.6,
+      "epsilon": 0.034,
+      "regime": "small"
+    },
+    "options": {
+      "A": 7.35,
+      "B": 10.15,
+      "C": 15.11,
+      "D": 20.63,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_105",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{7.40} \\frac{1}{\\epsilon + 8.0 x^{3} + 3.1 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 38.391$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 8.0,
+        "6": 3.1
+      },
+      "L": 7.4,
+      "epsilon": 38.391,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 0.11,
+      "B": 0.32,
+      "C": 0.26,
+      "D": 0.19,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_106",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{72.30} \\frac{1}{\\epsilon + 6.1 x^{2} + 3.4 x^{14} + 6.3 x^{18}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.021$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 6.1,
+        "14": 3.4,
+        "18": 6.3
+      },
+      "L": 72.3,
+      "epsilon": 0.021,
+      "regime": "small"
+    },
+    "options": {
+      "A": 34.69,
+      "B": 21.24,
+      "C": 13.8,
+      "D": 17.21,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_107",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{40.10} \\frac{1}{\\epsilon + 4.5 x^{4} + 6.4 x^{8}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 32.627$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "4": 4.5,
+        "8": 6.4
+      },
+      "L": 40.1,
+      "epsilon": 32.627,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 1.23,
+      "B": 0.53,
+      "C": 0.59,
+      "D": 1.93,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_108",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{24.80} \\frac{1}{\\epsilon + 9.6 x^{2} + 8.9 x^{8}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 6.005$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 9.6,
+        "8": 8.9
+      },
+      "L": 24.8,
+      "epsilon": 6.005,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.05,
+      "B": 0.08,
+      "C": 0.13,
+      "D": 0.21,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_109",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{32.20} \\frac{1}{\\epsilon + 5.4 x^{2} + 2.0 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 98.679$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 5.4,
+        "6": 2.0
+      },
+      "L": 32.2,
+      "epsilon": 98.679,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 0.22,
+      "B": 0.33,
+      "C": 0.44,
+      "D": 0.12,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_110",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{50.50} \\frac{1}{\\epsilon + 2.5 x^{4} + 5.7 x^{8}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.048$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "4": 2.5,
+        "8": 5.7
+      },
+      "L": 50.5,
+      "epsilon": 0.048,
+      "regime": "small"
+    },
+    "options": {
+      "A": 3.77,
+      "B": 18.18,
+      "C": 19.48,
+      "D": 11.47,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_111",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{5.50} \\frac{1}{\\epsilon + 1.2 x^{2} + 6.0 x^{8} + 6.3 x^{12}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.036$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 1.2,
+        "8": 6.0,
+        "12": 6.3
+      },
+      "L": 5.5,
+      "epsilon": 0.036,
+      "regime": "small"
+    },
+    "options": {
+      "A": 12.22,
+      "B": 30.02,
+      "C": 18.06,
+      "D": 12.13,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_112",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{35.50} \\frac{1}{\\epsilon + 6.2 x^{4} + 3.2 x^{9} + 5.3 x^{12}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.006$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "4": 6.2,
+        "9": 3.2,
+        "12": 5.3
+      },
+      "L": 35.5,
+      "epsilon": 0.006,
+      "regime": "small"
+    },
+    "options": {
+      "A": 33.57,
+      "B": 139.16,
+      "C": 94.7,
+      "D": 148.07,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_113",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{45.20} \\frac{1}{\\epsilon + 2.0 x^{3} + 2.7 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 22.616$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 2.0,
+        "6": 2.7
+      },
+      "L": 45.2,
+      "epsilon": 22.616,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 1.2,
+      "B": 2.0,
+      "C": 1.05,
+      "D": 2.75,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_114",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{17.30} \\frac{1}{\\epsilon + 5.3 x^{2} + 8.8 x^{10} + 9.1 x^{12}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.001$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 5.3,
+        "10": 8.8,
+        "12": 9.1
+      },
+      "L": 17.3,
+      "epsilon": 0.001,
+      "regime": "small"
+    },
+    "options": {
+      "A": 467.82,
+      "B": 637.13,
+      "C": 681.22,
+      "D": 661.54,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_115",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{77.10} \\frac{1}{\\epsilon + 5.5 x^{3} + 8.7 x^{5} + 2.4 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 17.21$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 5.5,
+        "5": 8.7,
+        "6": 2.4
+      },
+      "L": 77.1,
+      "epsilon": 17.21,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 1.93,
+      "B": 4.48,
+      "C": 2.41,
+      "D": 2.8,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_116",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{55.20} \\frac{1}{\\epsilon + 3.8 x^{4} + 3.3 x^{8}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 4.513$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "4": 3.8,
+        "8": 3.3
+      },
+      "L": 55.2,
+      "epsilon": 4.513,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.36,
+      "B": 0.23,
+      "C": 0.14,
+      "D": 0.11,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_117",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{5.60} \\frac{1}{\\epsilon + 6.5 x^{3} + 9.9 x^{5} + 6.9 x^{6}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 8.537$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 6.5,
+        "5": 9.9,
+        "6": 6.9
+      },
+      "L": 5.6,
+      "epsilon": 8.537,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.2,
+      "B": 0.08,
+      "C": 0.04,
+      "D": 0.13,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_118",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{14.80} \\frac{1}{\\epsilon + 1.4 x^{3} + 4.0 x^{8}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.049$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 1.4,
+        "8": 4.0
+      },
+      "L": 14.8,
+      "epsilon": 0.049,
+      "regime": "small"
+    },
+    "options": {
+      "A": 17.9,
+      "B": 11.77,
+      "C": 5.6,
+      "D": 16.06,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_119",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{14.60} \\frac{1}{\\epsilon + 6.2 x^{2} + 2.3 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 37.743$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 6.2,
+        "6": 2.3
+      },
+      "L": 14.6,
+      "epsilon": 37.743,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 0.39,
+      "B": 0.56,
+      "C": 0.13,
+      "D": 0.17,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_120",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{60.10} \\frac{1}{\\epsilon + 8.0 x^{3} + 4.7 x^{6} + 7.0 x^{8}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.013$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 8.0,
+        "6": 4.7,
+        "8": 7.0
+      },
+      "L": 60.1,
+      "epsilon": 0.013,
+      "regime": "small"
+    },
+    "options": {
+      "A": 22.3,
+      "B": 12.5,
+      "C": 35.05,
+      "D": 19.17,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_121",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{63.00} \\frac{1}{\\epsilon + 4.6 x^{2} + 3.5 x^{4} + 1.6 x^{8}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 4.809$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 4.6,
+        "4": 3.5,
+        "8": 1.6
+      },
+      "L": 63.0,
+      "epsilon": 4.809,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.29,
+      "B": 0.07,
+      "C": 0.21,
+      "D": 0.32,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_122",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{72.50} \\frac{1}{\\epsilon + 9.9 x^{3} + 2.0 x^{6}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 3.521$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 9.9,
+        "6": 2.0
+      },
+      "L": 72.5,
+      "epsilon": 3.521,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.26,
+      "B": 0.14,
+      "C": 0.2,
+      "D": 0.11,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_123",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{35.60} \\frac{1}{\\epsilon + 3.7 x^{2} + 3.8 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 46.216$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 3.7,
+        "6": 3.8
+      },
+      "L": 35.6,
+      "epsilon": 46.216,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 0.77,
+      "B": 0.45,
+      "C": 1.06,
+      "D": 0.33,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_124",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{40.50} \\frac{1}{\\epsilon + 5.2 x^{3} + 5.0 x^{5} + 2.9 x^{6}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 9.209$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 5.2,
+        "5": 5.0,
+        "6": 2.9
+      },
+      "L": 40.5,
+      "epsilon": 9.209,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.2,
+      "B": 0.13,
+      "C": 0.05,
+      "D": 0.09,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_125",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{71.50} \\frac{1}{\\epsilon + 6.5 x^{2} + 7.9 x^{4} + 5.1 x^{6}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.029$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 6.5,
+        "4": 7.9,
+        "6": 5.1
+      },
+      "L": 71.5,
+      "epsilon": 0.029,
+      "regime": "small"
+    },
+    "options": {
+      "A": 9.34,
+      "B": 14.57,
+      "C": 7.32,
+      "D": 23.13,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_126",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{14.10} \\frac{1}{\\epsilon + 6.0 x^{4} + 9.3 x^{12}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.008$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "4": 6.0,
+        "12": 9.3
+      },
+      "L": 14.1,
+      "epsilon": 0.008,
+      "regime": "small"
+    },
+    "options": {
+      "A": 107.26,
+      "B": 116.63,
+      "C": 103.15,
+      "D": 69.42,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_127",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{63.30} \\frac{1}{\\epsilon + 8.6 x^{3} + 3.5 x^{6}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 5.877$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 8.6,
+        "6": 3.5
+      },
+      "L": 63.3,
+      "epsilon": 5.877,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.21,
+      "B": 0.06,
+      "C": 0.09,
+      "D": 0.15,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_128",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{72.90} \\frac{1}{\\epsilon + 2.9 x^{4} + 4.8 x^{8}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 62.567$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "4": 2.9,
+        "8": 4.8
+      },
+      "L": 72.9,
+      "epsilon": 62.567,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 1.74,
+      "B": 1.85,
+      "C": 1.66,
+      "D": 1.17,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_129",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{35.30} \\frac{1}{\\epsilon + 1.3 x^{2} + 4.0 x^{6} + 7.1 x^{8}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 3.32$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 1.3,
+        "6": 4.0,
+        "8": 7.1
+      },
+      "L": 35.3,
+      "epsilon": 3.32,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.64,
+      "B": 0.25,
+      "C": 0.48,
+      "D": 0.15,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_130",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{25.90} \\frac{1}{\\epsilon + 5.1 x^{2} + 4.0 x^{6} + 8.9 x^{18}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.048$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 5.1,
+        "6": 4.0,
+        "18": 8.9
+      },
+      "L": 25.9,
+      "epsilon": 0.048,
+      "regime": "small"
+    },
+    "options": {
+      "A": 15.59,
+      "B": 8.28,
+      "C": 26.5,
+      "D": 7.98,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_131",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{6.50} \\frac{1}{\\epsilon + 9.5 x^{2} + 2.8 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 23.714$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 9.5,
+        "6": 2.8
+      },
+      "L": 6.5,
+      "epsilon": 23.714,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 0.13,
+      "B": 0.27,
+      "C": 0.18,
+      "D": 0.4,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_132",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{33.10} \\frac{1}{\\epsilon + 9.4 x^{2} + 6.2 x^{3} + 9.2 x^{18}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.047$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 9.4,
+        "3": 6.2,
+        "18": 9.2
+      },
+      "L": 33.1,
+      "epsilon": 0.047,
+      "regime": "small"
+    },
+    "options": {
+      "A": 15.87,
+      "B": 5.71,
+      "C": 21.28,
+      "D": 9.85,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_133",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{37.50} \\frac{1}{\\epsilon + 1.1 x^{3} + 4.8 x^{5} + 5.4 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 42.597$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 1.1,
+        "5": 4.8,
+        "6": 5.4
+      },
+      "L": 37.5,
+      "epsilon": 42.597,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 1.46,
+      "B": 1.21,
+      "C": 1.39,
+      "D": 0.88,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_134",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{23.30} \\frac{1}{\\epsilon + 8.5 x^{3} + 1.8 x^{4} + 8.9 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 51.824$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 8.5,
+        "4": 1.8,
+        "6": 8.9
+      },
+      "L": 23.3,
+      "epsilon": 51.824,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 0.16,
+      "B": 0.65,
+      "C": 0.69,
+      "D": 0.45,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_135",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{23.10} \\frac{1}{\\epsilon + 6.0 x^{3} + 5.6 x^{5} + 2.7 x^{6}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 5.251$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 6.0,
+        "5": 5.6,
+        "6": 2.7
+      },
+      "L": 23.1,
+      "epsilon": 5.251,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.28,
+      "B": 0.09,
+      "C": 0.12,
+      "D": 0.18,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_136",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{29.80} \\frac{1}{\\epsilon + 5.8 x^{4} + 4.8 x^{7} + 7.7 x^{8}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 7.623$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "4": 5.8,
+        "7": 4.8,
+        "8": 7.7
+      },
+      "L": 29.8,
+      "epsilon": 7.623,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.14,
+      "B": 0.09,
+      "C": 0.2,
+      "D": 0.04,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_137",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{26.90} \\frac{1}{\\epsilon + 2.1 x^{2} + 1.4 x^{11} + 1.5 x^{18}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.047$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 2.1,
+        "11": 1.4,
+        "18": 1.5
+      },
+      "L": 26.9,
+      "epsilon": 0.047,
+      "regime": "small"
+    },
+    "options": {
+      "A": 27.29,
+      "B": 26.84,
+      "C": 11.56,
+      "D": 17.55,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_138",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{48.30} \\frac{1}{\\epsilon + 2.0 x^{2} + 1.6 x^{4} + 5.4 x^{6}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.035$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 2.0,
+        "4": 1.6,
+        "6": 5.4
+      },
+      "L": 48.3,
+      "epsilon": 0.035,
+      "regime": "small"
+    },
+    "options": {
+      "A": 16.79,
+      "B": 12.34,
+      "C": 16.63,
+      "D": 8.22,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_139",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{60.50} \\frac{1}{\\epsilon + 3.7 x^{3} + 6.6 x^{7} + 6.5 x^{8}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 9.581$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 3.7,
+        "7": 6.6,
+        "8": 6.5
+      },
+      "L": 60.5,
+      "epsilon": 9.581,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.18,
+      "B": 0.14,
+      "C": 0.09,
+      "D": 0.22,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_140",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{74.30} \\frac{1}{\\epsilon + 5.1 x^{3} + 7.2 x^{6}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 8.303$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 5.1,
+        "6": 7.2
+      },
+      "L": 74.3,
+      "epsilon": 8.303,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.14,
+      "B": 0.06,
+      "C": 0.22,
+      "D": 0.19,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_141",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{42.00} \\frac{1}{\\epsilon + 9.5 x^{3} + 5.5 x^{6}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 2.644$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 9.5,
+        "6": 5.5
+      },
+      "L": 42.0,
+      "epsilon": 2.644,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.25,
+      "B": 0.4,
+      "C": 0.17,
+      "D": 0.33,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_142",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{38.20} \\frac{1}{\\epsilon + 2.6 x^{2} + 5.7 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 35.034$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 2.6,
+        "6": 5.7
+      },
+      "L": 38.2,
+      "epsilon": 35.034,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 1.69,
+      "B": 1.85,
+      "C": 1.09,
+      "D": 1.57,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_143",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{35.00} \\frac{1}{\\epsilon + 5.5 x^{3} + 7.0 x^{6}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.038$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 5.5,
+        "6": 7.0
+      },
+      "L": 35.0,
+      "epsilon": 0.038,
+      "regime": "small"
+    },
+    "options": {
+      "A": 11.03,
+      "B": 15.73,
+      "C": 14.85,
+      "D": 7.56,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_144",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{8.90} \\frac{1}{\\epsilon + 6.6 x^{2} + 5.5 x^{4} + 5.0 x^{6}} dx$. In the large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 4.136$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 6.6,
+        "4": 5.5,
+        "6": 5.0
+      },
+      "L": 8.9,
+      "epsilon": 4.136,
+      "regime": "large"
+    },
+    "options": {
+      "A": 0.19,
+      "B": 0.12,
+      "C": 0.3,
+      "D": 0.26,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_145",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{13.80} \\frac{1}{\\epsilon + 9.2 x^{2} + 5.2 x^{12}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.042$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 9.2,
+        "12": 5.2
+      },
+      "L": 13.8,
+      "epsilon": 0.042,
+      "regime": "small"
+    },
+    "options": {
+      "A": 23.37,
+      "B": 23.97,
+      "C": 23.9,
+      "D": 15.94,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_146",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{25.70} \\frac{1}{\\epsilon + 5.6 x^{2} + 8.9 x^{7} + 8.8 x^{8}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 81.101$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 5.6,
+        "7": 8.9,
+        "8": 8.8
+      },
+      "L": 25.7,
+      "epsilon": 81.101,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 0.11,
+      "B": 0.52,
+      "C": 0.47,
+      "D": 0.32,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_147",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{34.00} \\frac{1}{\\epsilon + 7.3 x^{3} + 8.3 x^{6}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.034$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "3": 7.3,
+        "6": 8.3
+      },
+      "L": 34.0,
+      "epsilon": 0.034,
+      "regime": "small"
+    },
+    "options": {
+      "A": 15.88,
+      "B": 11.76,
+      "C": 5.9,
+      "D": 4.37,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_148",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{40.20} \\frac{1}{\\epsilon + 4.7 x^{4} + 6.9 x^{5} + 2.4 x^{8}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 97.228$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "4": 4.7,
+        "5": 6.9,
+        "8": 2.4
+      },
+      "L": 40.2,
+      "epsilon": 97.228,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 0.59,
+      "B": 0.64,
+      "C": 0.41,
+      "D": 0.67,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_149",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{26.60} \\frac{1}{\\epsilon + 3.1 x^{2} + 7.2 x^{6}} dx$. In the very-large-$\\epsilon$ regime, using dominant balance with the lowest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 30.474$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 3.1,
+        "6": 7.2
+      },
+      "L": 26.6,
+      "epsilon": 30.474,
+      "regime": "very_large"
+    },
+    "options": {
+      "A": 1.29,
+      "B": 0.34,
+      "C": 0.87,
+      "D": 0.58,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "DOMBAL_150",
+    "domain": "dominant_balance",
+    "question": "Consider the integral $I(\\epsilon) = \\int_0^{64.40} \\frac{1}{\\epsilon + 2.3 x^{2} + 5.8 x^{9} + 6.1 x^{18}} dx$. In the small-$\\epsilon$ regime, using dominant balance with the highest-degree term of $P(x)$, what is the numerical value of the analytical approximation $I(\\epsilon)$ at $\\epsilon = 0.009$ (rounded to 2 decimals)?",
+    "params": {
+      "poly": {
+        "2": 2.3,
+        "9": 5.8,
+        "18": 6.1
+      },
+      "L": 64.4,
+      "epsilon": 0.009,
+      "regime": "small"
+    },
+    "options": {
+      "A": 103.0,
+      "B": 38.75,
+      "C": 77.35,
+      "D": 34.97,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_151",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 8x^10 - 7x^2 - 8 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "8*x**10 - 7*x**2 - 8"
+    },
+    "options": {
+      "A": 1.95,
+      "B": 0.9,
+      "C": -1.19,
+      "D": 0.84,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_152",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 7x^10 + 5x^9 + 7x^3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "7*x**10 + 5*x**9 + 7*x**3"
+    },
+    "options": {
+      "A": 0.7,
+      "B": -0.55,
+      "C": 2.15,
+      "D": 1.45,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_153",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 15x^10 + 9x^3 - 5 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "15*x**10 + 9*x**3 - 5"
+    },
+    "options": {
+      "A": 0.56,
+      "B": 0.19,
+      "C": 0.42,
+      "D": -0.71,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_154",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -14x^10 + 6x^4 - 8 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-14*x**10 + 6*x**4 - 8"
+    },
+    "options": {
+      "A": 3.59,
+      "B": -1.28,
+      "C": -1.4,
+      "D": -5.21,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_155",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 2x^10 + 8x^2 - 8 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "2*x**10 + 8*x**2 - 8"
+    },
+    "options": {
+      "A": -0.34,
+      "B": 0.25,
+      "C": 0.15,
+      "D": 0.11,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_156",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 5x^10 - 3x^6 + 13x into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "5*x**10 - 3*x**6 + 13*x"
+    },
+    "options": {
+      "A": -2.85,
+      "B": 4.43,
+      "C": -7.38,
+      "D": -6.2,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_157",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -13x^10 + 9x^9 - 14x^7 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-13*x**10 + 9*x**9 - 14*x**7"
+    },
+    "options": {
+      "A": -0.54,
+      "B": -2.36,
+      "C": 1.52,
+      "D": -2.21,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_158",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 1x^10 + 9x - 10 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "1*x**10 + 9*x - 10"
+    },
+    "options": {
+      "A": 0.29,
+      "B": 0.14,
+      "C": 0.11,
+      "D": -0.48,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_159",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -15x^10 - 12x^6 + 14x^3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-15*x**10 - 12*x**6 + 14*x**3"
+    },
+    "options": {
+      "A": 0.84,
+      "B": -0.48,
+      "C": 2.01,
+      "D": 1.39,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_160",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 15x^10 + 2x^3 - 10x^2 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "15*x**10 + 2*x**3 - 10*x**2"
+    },
+    "options": {
+      "A": -100.76,
+      "B": -508.24,
+      "C": -450.8,
+      "D": 320.62,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_161",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 3x^10 - 8x^9 - 15x^3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "3*x**10 - 8*x**9 - 15*x**3"
+    },
+    "options": {
+      "A": 0.4,
+      "B": -0.27,
+      "C": -0.14,
+      "D": -0.24,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_162",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 10x^10 + 10x^8 - 2x^3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "10*x**10 + 10*x**8 - 2*x**3"
+    },
+    "options": {
+      "A": -0.42,
+      "B": -1.05,
+      "C": -0.98,
+      "D": 0.67,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_163",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -2x^10 - 10x^8 - 7x^2 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-2*x**10 - 10*x**8 - 7*x**2"
+    },
+    "options": {
+      "A": 0.06,
+      "B": 0.09,
+      "C": -0.12,
+      "D": 0.18,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_164",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -10x^10 - 3x^7 - 15 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-10*x**10 - 3*x**7 - 15"
+    },
+    "options": {
+      "A": 11.09,
+      "B": 6.64,
+      "C": -11.25,
+      "D": 9.39,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_165",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 8x^10 - 5x^9 - 14 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "8*x**10 - 5*x**9 - 14"
+    },
+    "options": {
+      "A": 0.89,
+      "B": 1.79,
+      "C": 1.21,
+      "D": -2.36,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_166",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 15x^10 + 13x^7 + 3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "15*x**10 + 13*x**7 + 3"
+    },
+    "options": {
+      "A": 0.62,
+      "B": -0.37,
+      "C": -0.96,
+      "D": -0.2,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_167",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -5x^10 + 14x^5 + 9x^3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-5*x**10 + 14*x**5 + 9*x**3"
+    },
+    "options": {
+      "A": -0.15,
+      "B": -0.12,
+      "C": 0.23,
+      "D": -0.07,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_168",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 10x^10 + 5x^5 + 1x^4 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "10*x**10 + 5*x**5 + 1*x**4"
+    },
+    "options": {
+      "A": -0.13,
+      "B": -0.52,
+      "C": 0.4,
+      "D": -0.24,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_169",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 6x^10 + 5x^6 + 12x into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "6*x**10 + 5*x**6 + 12*x"
+    },
+    "options": {
+      "A": 2.15,
+      "B": 1.29,
+      "C": -3.02,
+      "D": -2.87,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_170",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -1x^10 + 2x^3 + 7x^2 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-1*x**10 + 2*x**3 + 7*x**2"
+    },
+    "options": {
+      "A": -14.12,
+      "B": 9.3,
+      "C": -4.92,
+      "D": -6.09,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_171",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 13x^10 - 4x^6 - 9 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "13*x**10 - 4*x**6 - 9"
+    },
+    "options": {
+      "A": 1.73,
+      "B": -2.38,
+      "C": 5.58,
+      "D": 8.04,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_172",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 14x^10 - 5x^3 + 10x^2 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "14*x**10 - 5*x**3 + 10*x**2"
+    },
+    "options": {
+      "A": -4.62,
+      "B": -7.72,
+      "C": 8.37,
+      "D": 14.11,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_173",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -15x^10 + 6x^4 - 9x into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-15*x**10 + 6*x**4 - 9*x"
+    },
+    "options": {
+      "A": -6.61,
+      "B": 4.59,
+      "C": -7.55,
+      "D": -6.7,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_174",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -12x^10 + 4x^5 - 2 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-12*x**10 + 4*x**5 - 2"
+    },
+    "options": {
+      "A": 2.16,
+      "B": -2.1,
+      "C": 1.5,
+      "D": 0.79,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_175",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 4x^10 - 5x^2 + 6x into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "4*x**10 - 5*x**2 + 6*x"
+    },
+    "options": {
+      "A": -2.49,
+      "B": -2.72,
+      "C": -2.37,
+      "D": 1.66,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_176",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 2x^10 + 11x^5 - 15x^3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "2*x**10 + 11*x**5 - 15*x**3"
+    },
+    "options": {
+      "A": -0.1,
+      "B": -0.37,
+      "C": 0.25,
+      "D": -0.14,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_177",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -11x^10 - 15x^4 - 14x into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-11*x**10 - 15*x**4 - 14*x"
+    },
+    "options": {
+      "A": -0.3,
+      "B": -0.34,
+      "C": -0.92,
+      "D": 0.66,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_178",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 1x^10 - 1x^3 - 14x^2 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "1*x**10 - 1*x**3 - 14*x**2"
+    },
+    "options": {
+      "A": -740.25,
+      "B": -700.36,
+      "C": 225.35,
+      "D": 472.39,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_179",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 9x^10 - 8x^8 + 11x^4 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "9*x**10 - 8*x**8 + 11*x**4"
+    },
+    "options": {
+      "A": 1.22,
+      "B": -1.7,
+      "C": -1.9,
+      "D": 1.8,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_180",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -11x^10 + 7x^7 - 9x^5 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-11*x**10 + 7*x**7 - 9*x**5"
+    },
+    "options": {
+      "A": 0.93,
+      "B": -2.32,
+      "C": -2.51,
+      "D": 1.75,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_181",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 9x^10 - 3x^6 + 12x^2 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "9*x**10 - 3*x**6 + 12*x**2"
+    },
+    "options": {
+      "A": -12.52,
+      "B": 11.3,
+      "C": -3.66,
+      "D": 7.56,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_182",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 8x^10 - 13x^4 + 6x^2 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "8*x**10 - 13*x**4 + 6*x**2"
+    },
+    "options": {
+      "A": -0.26,
+      "B": 0.19,
+      "C": -0.32,
+      "D": -0.07,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_183",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -14x^10 + 11x^9 + 15x into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-14*x**10 + 11*x**9 + 15*x"
+    },
+    "options": {
+      "A": 1.32,
+      "B": -1.82,
+      "C": -0.86,
+      "D": -0.82,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_184",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -15x^10 + 14x^4 + 14 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-15*x**10 + 14*x**4 + 14"
+    },
+    "options": {
+      "A": -0.35,
+      "B": 1.48,
+      "C": 1.07,
+      "D": -0.55,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_185",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -14x^10 + 8x^5 - 13x^4 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-14*x**10 + 8*x**5 - 13*x**4"
+    },
+    "options": {
+      "A": 2.84,
+      "B": -1.04,
+      "C": -1.87,
+      "D": -0.91,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_186",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -2x^10 + 8x^9 - 12x^8 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-2*x**10 + 8*x**9 - 12*x**8"
+    },
+    "options": {
+      "A": -0.42,
+      "B": -0.09,
+      "C": 0.26,
+      "D": -0.13,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_187",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 9x^10 + 5x^6 - 2x^3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "9*x**10 + 5*x**6 - 2*x**3"
+    },
+    "options": {
+      "A": -0.45,
+      "B": -1.42,
+      "C": 1.6,
+      "D": 0.98,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_188",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -15x^10 + 1x^5 - 11x^4 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-15*x**10 + 1*x**5 - 11*x**4"
+    },
+    "options": {
+      "A": 115.07,
+      "B": 280.07,
+      "C": 165.0,
+      "D": -228.68,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_189",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -1x^10 - 4x^2 - 11 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-1*x**10 - 4*x**2 - 11"
+    },
+    "options": {
+      "A": 4.92,
+      "B": 19.38,
+      "C": -19.92,
+      "D": 14.3,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_190",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 10x^10 - 10x^2 + 11x into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "10*x**10 - 10*x**2 + 11*x"
+    },
+    "options": {
+      "A": -0.5,
+      "B": 1.46,
+      "C": 2.25,
+      "D": 1.92,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_191",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -12x^10 + 12x^7 + 9x^6 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-12*x**10 + 12*x**7 + 9*x**6"
+    },
+    "options": {
+      "A": 1.37,
+      "B": -0.54,
+      "C": 0.88,
+      "D": -0.6,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_192",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 6x^10 + 8x^3 - 3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "6*x**10 + 8*x**3 - 3"
+    },
+    "options": {
+      "A": -0.05,
+      "B": -0.02,
+      "C": 0.11,
+      "D": 0.08,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_193",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -2x^10 + 9x^7 + 7x^4 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-2*x**10 + 9*x**7 + 7*x**4"
+    },
+    "options": {
+      "A": 0.2,
+      "B": -0.1,
+      "C": 0.28,
+      "D": -0.13,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_194",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -4x^10 - 9x^7 - 5x^2 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-4*x**10 - 9*x**7 - 5*x**2"
+    },
+    "options": {
+      "A": -0.59,
+      "B": 0.35,
+      "C": -0.2,
+      "D": -0.14,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_195",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 12x^10 - 13x^3 - 12x^2 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "12*x**10 - 13*x**3 - 12*x**2"
+    },
+    "options": {
+      "A": 0.77,
+      "B": 1.27,
+      "C": -0.25,
+      "D": 0.31,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_196",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -5x^10 - 9x^8 + 8 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-5*x**10 - 9*x**8 + 8"
+    },
+    "options": {
+      "A": 0.82,
+      "B": 0.54,
+      "C": -0.26,
+      "D": -0.23,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_197",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 10x^10 + 7x^5 + 4x into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "10*x**10 + 7*x**5 + 4*x"
+    },
+    "options": {
+      "A": 0.82,
+      "B": -1.09,
+      "C": -0.36,
+      "D": -1.15,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_198",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = 1x^10 + 7x^4 - 12x^3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "1*x**10 + 7*x**4 - 12*x**3"
+    },
+    "options": {
+      "A": -0.53,
+      "B": 0.32,
+      "C": -0.44,
+      "D": -0.11,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_199",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -3x^10 + 8x^6 - 10x^3 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-3*x**10 + 8*x**6 - 10*x**3"
+    },
+    "options": {
+      "A": 0.71,
+      "B": 0.44,
+      "C": -0.58,
+      "D": -0.63,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "NONDIM_200",
+    "domain": "nondim",
+    "question": "Nondimensionalize the polynomial P(x) = -11x^10 - 13x^7 + 8x^5 into a polynomial of the form ε·y^10 ± y^k ± 1. Solve for ε, rounded to 2 decimal places.",
+    "params": {
+      "polynomial": "-11*x**10 - 13*x**7 + 8*x**5"
+    },
+    "options": {
+      "A": 0.69,
+      "B": -0.38,
+      "C": -1.15,
+      "D": 1.01,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_201",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.1}^{-0.3} (-0.6*t**6 + 0.4*t**3 + 1.9*sin(t)) e^{- x (-0.3*t**5 + -0.9*t**3 + 1.4*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.6*t**6 + 0.4*t**3 + 1.9*sin(t)",
+      "f": "-0.3*t**5 + -0.9*t**3 + 1.4*cos(t)",
+      "a": -1.1,
+      "b": -0.3,
+      "k": -1
+    },
+    "options": {
+      "A": -1.48,
+      "B": -0.94,
+      "C": -0.37,
+      "D": -0.55,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_202",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.7}^{-0.1} (-0.9*t + 0.6*sin(t)*cos(t)) e^{ x (0.2*t**5 + 1.9*t**2 + 0.9*sin(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.9*t + 0.6*sin(t)*cos(t)",
+      "f": "0.2*t**5 + 1.9*t**2 + 0.9*sin(2*t)",
+      "a": -0.7,
+      "b": -0.1,
+      "k": 1
+    },
+    "options": {
+      "A": -0.08,
+      "B": -0.16,
+      "C": -0.24,
+      "D": -0.11,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_203",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{0.2}^{0.8} (-1.3*t**3 + 1.4*cos(t) + 0.7*t) e^{ x (0.4*t**4 + -1.3*t**3 + 1.4*t**2)} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-1.3*t**3 + 1.4*cos(t) + 0.7*t",
+      "f": "0.4*t**4 + -1.3*t**3 + 1.4*t**2",
+      "a": 0.2,
+      "b": 0.8,
+      "k": 1
+    },
+    "options": {
+      "A": 0.66,
+      "B": 1.54,
+      "C": 2.1,
+      "D": 0.91,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_204",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.7}^{-0.3} (0.6*t**2 + 1.5*sin(2*t)) e^{ x (-1.8*t**5 + -1.4*t**2 + 1.2*sin(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.6*t**2 + 1.5*sin(2*t)",
+      "f": "-1.8*t**5 + -1.4*t**2 + 1.2*sin(2*t)",
+      "a": -0.7,
+      "b": -0.3,
+      "k": 1
+    },
+    "options": {
+      "A": -0.48,
+      "B": -0.16,
+      "C": -0.44,
+      "D": -0.29,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_205",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{0.2}^{0.6} (0.3*t**5 + -0.5*t**2 + 1.4*cos(t) + -0.1*t) e^{- x (1.9*t**4 + 1.4*t + 0.5*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.3*t**5 + -0.5*t**2 + 1.4*cos(t) + -0.1*t",
+      "f": "1.9*t**4 + 1.4*t + 0.5*cos(t)",
+      "a": 0.2,
+      "b": 0.6,
+      "k": -1
+    },
+    "options": {
+      "A": 1.32,
+      "B": 1.56,
+      "C": 0.98,
+      "D": 0.62,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_206",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.5}^{-0.1} (0.2*t**6 + -1.0*t**3 + 2.4*sin(t)) e^{ x (1.8*t**4 + 1.4*cos(t) + 1.7*t**3)} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.2*t**6 + -1.0*t**3 + 2.4*sin(t)",
+      "f": "1.8*t**4 + 1.4*cos(t) + 1.7*t**3",
+      "a": -0.5,
+      "b": -0.1,
+      "k": 1
+    },
+    "options": {
+      "A": -1.3,
+      "B": -2.15,
+      "C": -2.0,
+      "D": -1.7,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_207",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{0.3}^{1.5} (2.5*sin(t) + 1.9*t**2 + 1.3*cos(2*t)) e^{- x (-1.5*t**3 + -0.1*t**2 + 1.3*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "2.5*sin(t) + 1.9*t**2 + 1.3*cos(2*t)",
+      "f": "-1.5*t**3 + -0.1*t**2 + 1.3*sin(t)",
+      "a": 0.3,
+      "b": 1.5,
+      "k": -1
+    },
+    "options": {
+      "A": -0.75,
+      "B": -0.53,
+      "C": -0.17,
+      "D": -0.84,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_208",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.0}^{-0.1} (-0.7*t**6 + 1.3*t**3 + 1.9*sin(t)) e^{- x (-1.3*t**5 + -0.1*t**2 + 0.9*sin(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.7*t**6 + 1.3*t**3 + 1.9*sin(t)",
+      "f": "-1.3*t**5 + -0.1*t**2 + 0.9*sin(2*t)",
+      "a": -1.0,
+      "b": -0.1,
+      "k": -1
+    },
+    "options": {
+      "A": -0.34,
+      "B": -0.95,
+      "C": -0.66,
+      "D": -0.88,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_209",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.0}^{1.0} (-1.2*t**2 + 1.8*sin(2*t)) e^{- x (-0.3*t**3 + -0.9*t**2 + 0.9*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-1.2*t**2 + 1.8*sin(2*t)",
+      "f": "-0.3*t**3 + -0.9*t**2 + 0.9*sin(t)",
+      "a": -0.0,
+      "b": 1.0,
+      "k": -1
+    },
+    "options": {
+      "A": -0.08,
+      "B": -0.14,
+      "C": -0.2,
+      "D": -0.33,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_210",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{0.1}^{1.0} (-1.2*t**3 + -1.1*t + 0.6*sin(t) + 1.6*cos(t)) e^{ x (1.2*t**5 + -1.3*t**4 + 0.3*t**2 + 1.0*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-1.2*t**3 + -1.1*t + 0.6*sin(t) + 1.6*cos(t)",
+      "f": "1.2*t**5 + -1.3*t**4 + 0.3*t**2 + 1.0*cos(t)",
+      "a": 0.1,
+      "b": 1.0,
+      "k": 1
+    },
+    "options": {
+      "A": -23.48,
+      "B": -16.02,
+      "C": -12.44,
+      "D": -34.67,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_211",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.3}^{0.0} (0.5*t**5 + 0.3*t**2 + 1.0*cos(t) + -0.7*t) e^{- x (-0.8*t**6 + -0.3*t**4 + 0.7*t**2 + 0.8*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.5*t**5 + 0.3*t**2 + 1.0*cos(t) + -0.7*t",
+      "f": "-0.8*t**6 + -0.3*t**4 + 0.7*t**2 + 0.8*sin(t)",
+      "a": -0.3,
+      "b": 0.0,
+      "k": -1
+    },
+    "options": {
+      "A": 3.07,
+      "B": 2.14,
+      "C": 1.76,
+      "D": 2.06,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_212",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.3}^{0.4} (1.0*t**3 + 1.8*cos(t) + -0.2*t) e^{ x (-1.3*t**3 + -1.9*t**2 + 1.6*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.0*t**3 + 1.8*cos(t) + -0.2*t",
+      "f": "-1.3*t**3 + -1.9*t**2 + 1.6*sin(t)",
+      "a": -0.3,
+      "b": 0.4,
+      "k": 1
+    },
+    "options": {
+      "A": 1.27,
+      "B": 0.4,
+      "C": 0.61,
+      "D": 0.92,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_213",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.4}^{-0.7} (-1.0*t**4 + -1.4*t**2 + 2.1*cos(t)) e^{- x (-0.8*t**3 + 0.9*sin(t) + -0.9*t**2)} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-1.0*t**4 + -1.4*t**2 + 2.1*cos(t)",
+      "f": "-0.8*t**3 + 0.9*sin(t) + -0.9*t**2",
+      "a": -1.4,
+      "b": -0.7,
+      "k": -1
+    },
+    "options": {
+      "A": -0.34,
+      "B": -1.23,
+      "C": -0.98,
+      "D": -0.75,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_214",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.4}^{0.0} (0.4*t + 2.1*sin(t)*cos(t)) e^{- x (-0.3*t**3 + 0.4*t**4 + 1.0*cos(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.4*t + 2.1*sin(t)*cos(t)",
+      "f": "-0.3*t**3 + 0.4*t**4 + 1.0*cos(2*t)",
+      "a": -0.4,
+      "b": 0.0,
+      "k": -1
+    },
+    "options": {
+      "A": -1.14,
+      "B": -1.28,
+      "C": -0.37,
+      "D": -0.77,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_215",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.9}^{-0.6} (-0.9*t**3 + 1.8*cos(t) + 0.8*t) e^{- x (2.2*t**5 + -0.1*t**2 + 0.5*sin(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.9*t**3 + 1.8*cos(t) + 0.8*t",
+      "f": "2.2*t**5 + -0.1*t**2 + 0.5*sin(2*t)",
+      "a": -0.9,
+      "b": -0.6,
+      "k": -1
+    },
+    "options": {
+      "A": 0.1,
+      "B": 0.15,
+      "C": 0.22,
+      "D": 0.07,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_216",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.0}^{-0.1} (-1.6*t**2 + 0.5*sin(2*t)) e^{- x (-0.8*t**5 + -0.8*t**3 + 1.3*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-1.6*t**2 + 0.5*sin(2*t)",
+      "f": "-0.8*t**5 + -0.8*t**3 + 1.3*cos(t)",
+      "a": -1.0,
+      "b": -0.1,
+      "k": -1
+    },
+    "options": {
+      "A": -0.65,
+      "B": -0.37,
+      "C": -0.27,
+      "D": -1.1,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_217",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.4}^{-0.7} (1.0*t**4 + 1.0*t**3 + 0.8*sin(t)) e^{- x (-0.6*t**5 + 1.9*t**3 + 0.7*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.0*t**4 + 1.0*t**3 + 0.8*sin(t)",
+      "f": "-0.6*t**5 + 1.9*t**3 + 0.7*cos(t)",
+      "a": -1.4,
+      "b": -0.7,
+      "k": -1
+    },
+    "options": {
+      "A": 0.47,
+      "B": 0.92,
+      "C": 0.28,
+      "D": 1.37,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_218",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.0}^{0.8} (-0.1*t**4 + -0.6*t**3 + 1.4*sin(t)) e^{- x (1.8*t**5 + -0.8*t**4 + -1.5*t**2 + 1.1*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.1*t**4 + -0.6*t**3 + 1.4*sin(t)",
+      "f": "1.8*t**5 + -0.8*t**4 + -1.5*t**2 + 1.1*cos(t)",
+      "a": -0.0,
+      "b": 0.8,
+      "k": -1
+    },
+    "options": {
+      "A": -0.22,
+      "B": -0.33,
+      "C": -0.4,
+      "D": -0.58,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_219",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.8}^{-0.4} (0.7*sin(t) + 0.5*t**2 + 1.9*cos(2*t)) e^{- x (-2.2*t**5 + 0.4*t**4 + 0.8*t**2 + 1.3*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.7*sin(t) + 0.5*t**2 + 1.9*cos(2*t)",
+      "f": "-2.2*t**5 + 0.4*t**4 + 0.8*t**2 + 1.3*cos(t)",
+      "a": -0.8,
+      "b": -0.4,
+      "k": -1
+    },
+    "options": {
+      "A": -3.54,
+      "B": -2.18,
+      "C": -1.42,
+      "D": -3.11,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_220",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.8}^{-0.4} (2.3*sin(t) + 0.2*t**2 + 1.3*cos(2*t)) e^{- x (-1.6*t**5 + -1.3*t**2 + 0.8*sin(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "2.3*sin(t) + 0.2*t**2 + 1.3*cos(2*t)",
+      "f": "-1.6*t**5 + -1.3*t**2 + 0.8*sin(2*t)",
+      "a": -0.8,
+      "b": -0.4,
+      "k": -1
+    },
+    "options": {
+      "A": -0.78,
+      "B": -0.33,
+      "C": -0.17,
+      "D": -0.49,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_221",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.4}^{0.3} (1.5*t**3 + 0.5*t + 1.0*sin(t) + 1.4*cos(t)) e^{ x (0.7*t**6 + 0.5*t**4 + 0.2*t**2 + 0.9*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.5*t**3 + 0.5*t + 1.0*sin(t) + 1.4*cos(t)",
+      "f": "0.7*t**6 + 0.5*t**4 + 0.2*t**2 + 0.9*sin(t)",
+      "a": -0.4,
+      "b": 0.3,
+      "k": 1
+    },
+    "options": {
+      "A": 2.64,
+      "B": 0.69,
+      "C": 2.7,
+      "D": 1.75,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_222",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.3}^{-0.5} (1.0*t**5 + -1.5*t**3 + 1.5*t**2 + 1.0*sin(t)) e^{- x (-1.5*t**5 + -1.9*t**2 + 1.1*sin(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.0*t**5 + -1.5*t**3 + 1.5*t**2 + 1.0*sin(t)",
+      "f": "-1.5*t**5 + -1.9*t**2 + 1.1*sin(2*t)",
+      "a": -1.3,
+      "b": -0.5,
+      "k": -1
+    },
+    "options": {
+      "A": 0.11,
+      "B": 0.16,
+      "C": 0.24,
+      "D": 0.35,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_223",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{0.4}^{1.4} (-0.4*t**5 + 1.0*t**3 + 1.6*t**2 + 2.6*sin(t)) e^{ x (1.6*t**5 + -0.7*t**4 + -1.8*t**2 + 0.6*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.4*t**5 + 1.0*t**3 + 1.6*t**2 + 2.6*sin(t)",
+      "f": "1.6*t**5 + -0.7*t**4 + -1.8*t**2 + 0.6*cos(t)",
+      "a": 0.4,
+      "b": 1.4,
+      "k": 1
+    },
+    "options": {
+      "A": 0.11,
+      "B": 0.24,
+      "C": 0.21,
+      "D": 0.36,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_224",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.4}^{0.1} (0.5*t**6 + -0.3*t**3 + 0.8*sin(t)) e^{- x (-0.6*t**3 + -0.1*t**4 + 1.2*cos(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.5*t**6 + -0.3*t**3 + 0.8*sin(t)",
+      "f": "-0.6*t**3 + -0.1*t**4 + 1.2*cos(2*t)",
+      "a": -0.4,
+      "b": 0.1,
+      "k": -1
+    },
+    "options": {
+      "A": -0.07,
+      "B": -0.1,
+      "C": -0.32,
+      "D": -0.2,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_225",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.4}^{0.8} (0.8*t**5 + -0.3*t**2 + 1.6*cos(t) + 0.3*t) e^{ x (0.2*t**3 + -0.4*t**4 + 1.1*cos(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.8*t**5 + -0.3*t**2 + 1.6*cos(t) + 0.3*t",
+      "f": "0.2*t**3 + -0.4*t**4 + 1.1*cos(2*t)",
+      "a": -0.4,
+      "b": 0.8,
+      "k": 1
+    },
+    "options": {
+      "A": 0.34,
+      "B": 1.08,
+      "C": 1.82,
+      "D": 1.73,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_226",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.5}^{0.7} (-0.6*t**5 + -1.1*t**3 + 1.4*t**2 + 0.6*sin(t)) e^{ x (1.7*t**4 + 0.3*t + 1.1*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.6*t**5 + -1.1*t**3 + 1.4*t**2 + 0.6*sin(t)",
+      "f": "1.7*t**4 + 0.3*t + 1.1*cos(t)",
+      "a": -0.5,
+      "b": 0.7,
+      "k": 1
+    },
+    "options": {
+      "A": 0.49,
+      "B": 0.17,
+      "C": 0.41,
+      "D": 0.31,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_227",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{0.2}^{1.1} (0.6*t + 0.6*sin(t)*cos(t)) e^{- x (-0.5*t**3 + 0.8*t**4 + 1.4*cos(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.6*t + 0.6*sin(t)*cos(t)",
+      "f": "-0.5*t**3 + 0.8*t**4 + 1.4*cos(2*t)",
+      "a": 0.2,
+      "b": 1.1,
+      "k": -1
+    },
+    "options": {
+      "A": 0.38,
+      "B": 0.2,
+      "C": 0.13,
+      "D": 0.54,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_228",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.6}^{0.2} (-0.3*t**2 + 2.5*sin(2*t)) e^{- x (-1.5*t**3 + -1.7*t**2 + 1.4*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.3*t**2 + 2.5*sin(2*t)",
+      "f": "-1.5*t**3 + -1.7*t**2 + 1.4*sin(t)",
+      "a": -0.6,
+      "b": 0.2,
+      "k": -1
+    },
+    "options": {
+      "A": -0.77,
+      "B": -2.05,
+      "C": -1.55,
+      "D": -2.18,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_229",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.3}^{0.1} (-0.4*t**5 + -1.2*t**2 + 1.0*cos(t) + 0.5*t) e^{ x (-1.3*t**4 + -0.6*t + 1.3*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.4*t**5 + -1.2*t**2 + 1.0*cos(t) + 0.5*t",
+      "f": "-1.3*t**4 + -0.6*t + 1.3*cos(t)",
+      "a": -0.3,
+      "b": 0.1,
+      "k": 1
+    },
+    "options": {
+      "A": -9.26,
+      "B": -3.51,
+      "C": -12.78,
+      "D": -4.85,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_230",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.3}^{-1.0} (-1.5*t**4 + 0.6*t**3 + 0.8*sin(t)) e^{- x (-0.1*t**5 + -0.7*t**2 + 1.2*sin(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-1.5*t**4 + 0.6*t**3 + 0.8*sin(t)",
+      "f": "-0.1*t**5 + -0.7*t**2 + 1.2*sin(2*t)",
+      "a": -1.3,
+      "b": -1.0,
+      "k": -1
+    },
+    "options": {
+      "A": 13.49,
+      "B": 38.88,
+      "C": 11.85,
+      "D": 28.08,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_231",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.0}^{-0.6} (-0.9*t + 1.7*sin(t)*cos(t)) e^{- x (-2.2*t**5 + 0.5*t**4 + 0.7*t**2 + 1.4*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.9*t + 1.7*sin(t)*cos(t)",
+      "f": "-2.2*t**5 + 0.5*t**4 + 0.7*t**2 + 1.4*cos(t)",
+      "a": -1.0,
+      "b": -0.6,
+      "k": -1
+    },
+    "options": {
+      "A": 0.17,
+      "B": 0.22,
+      "C": 0.13,
+      "D": 0.07,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_232",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.5}^{0.2} (-0.8*t**5 + 0.1*t**3 + -0.7*t**2 + 1.5*sin(t)) e^{- x (-1.9*t**3 + 0.7*t**2 + 1.0*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.8*t**5 + 0.1*t**3 + -0.7*t**2 + 1.5*sin(t)",
+      "f": "-1.9*t**3 + 0.7*t**2 + 1.0*sin(t)",
+      "a": -0.5,
+      "b": 0.2,
+      "k": -1
+    },
+    "options": {
+      "A": -0.52,
+      "B": -0.32,
+      "C": -0.45,
+      "D": -0.11,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_233",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.8}^{-0.1} (0.9*t**4 + 0.1*t**2 + 2.2*cos(t)) e^{- x (-0.4*t**5 + 0.3*t**3 + 0.9*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.9*t**4 + 0.1*t**2 + 2.2*cos(t)",
+      "f": "-0.4*t**5 + 0.3*t**3 + 0.9*cos(t)",
+      "a": -0.8,
+      "b": -0.1,
+      "k": -1
+    },
+    "options": {
+      "A": 3.01,
+      "B": 4.88,
+      "C": 6.95,
+      "D": 2.54,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_234",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.1}^{1.0} (1.5*t**5 + 1.9*t**2 + 0.7*cos(t) + 1.3*t) e^{- x (-0.7*t**3 + 0.2*t**2 + 1.9*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.5*t**5 + 1.9*t**2 + 0.7*cos(t) + 1.3*t",
+      "f": "-0.7*t**3 + 0.2*t**2 + 1.9*sin(t)",
+      "a": -0.1,
+      "b": 1.0,
+      "k": -1
+    },
+    "options": {
+      "A": 0.43,
+      "B": 0.51,
+      "C": 0.12,
+      "D": 0.32,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_235",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.6}^{0.5} (1.1*t**3 + -1.6*t + 0.8*sin(t) + 1.6*cos(t)) e^{ x (0.5*t**3 + 0.3*t**4 + 1.1*cos(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.1*t**3 + -1.6*t + 0.8*sin(t) + 1.6*cos(t)",
+      "f": "0.5*t**3 + 0.3*t**4 + 1.1*cos(2*t)",
+      "a": -0.6,
+      "b": 0.5,
+      "k": 1
+    },
+    "options": {
+      "A": 0.5,
+      "B": 1.08,
+      "C": 1.44,
+      "D": 1.7,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_236",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.1}^{0.5} (1.7*sin(t) + -1.3*t**2 + 0.8*cos(2*t)) e^{ x (1.1*t**3 + 0.5*sin(t) + -0.9*t**2)} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.7*sin(t) + -1.3*t**2 + 0.8*cos(2*t)",
+      "f": "1.1*t**3 + 0.5*sin(t) + -0.9*t**2",
+      "a": -0.1,
+      "b": 0.5,
+      "k": 1
+    },
+    "options": {
+      "A": 1.36,
+      "B": 1.01,
+      "C": 3.48,
+      "D": 2.54,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_237",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{0.2}^{1.3} (0.8*t**5 + 0.4*t**2 + 1.7*cos(t) + 0.7*t) e^{ x (0.4*t**3 + 1.6*sin(t) + 0.4*t**2)} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.8*t**5 + 0.4*t**2 + 1.7*cos(t) + 0.7*t",
+      "f": "0.4*t**3 + 1.6*sin(t) + 0.4*t**2",
+      "a": 0.2,
+      "b": 1.3,
+      "k": 1
+    },
+    "options": {
+      "A": 0.7,
+      "B": 1.43,
+      "C": 0.74,
+      "D": 2.16,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_238",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{0.5}^{0.8} (0.5*t**6 + 1.4*t**3 + 1.0*sin(t)) e^{ x (-0.5*t**5 + -0.8*t**2 + 1.3*sin(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.5*t**6 + 1.4*t**3 + 1.0*sin(t)",
+      "f": "-0.5*t**5 + -0.8*t**2 + 1.3*sin(2*t)",
+      "a": 0.5,
+      "b": 0.8,
+      "k": 1
+    },
+    "options": {
+      "A": 0.58,
+      "B": 0.23,
+      "C": 0.17,
+      "D": 0.39,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_239",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.3}^{-0.5} (1.8*t + 2.2*sin(t)*cos(t)) e^{- x (-0.4*t**3 + -0.7*t**2 + 0.5*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.8*t + 2.2*sin(t)*cos(t)",
+      "f": "-0.4*t**3 + -0.7*t**2 + 0.5*sin(t)",
+      "a": -1.3,
+      "b": -0.5,
+      "k": -1
+    },
+    "options": {
+      "A": -0.98,
+      "B": -1.7,
+      "C": -2.83,
+      "D": -1.47,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_240",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.1}^{0.8} (0.4*t**6 + 0.7*t**3 + 2.9*sin(t)) e^{- x (1.8*t**3 + -0.4*t**4 + 0.9*cos(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.4*t**6 + 0.7*t**3 + 2.9*sin(t)",
+      "f": "1.8*t**3 + -0.4*t**4 + 0.9*cos(2*t)",
+      "a": -0.1,
+      "b": 0.8,
+      "k": -1
+    },
+    "options": {
+      "A": 1.38,
+      "B": 2.22,
+      "C": 0.88,
+      "D": 0.65,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_241",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.7}^{-0.1} (0.4*t**4 + -1.1*t**3 + 0.8*sin(t)) e^{ x (-2.5*t**5 + 1.1*t**3 + 0.5*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.4*t**4 + -1.1*t**3 + 0.8*sin(t)",
+      "f": "-2.5*t**5 + 1.1*t**3 + 0.5*cos(t)",
+      "a": -0.7,
+      "b": -0.1,
+      "k": 1
+    },
+    "options": {
+      "A": -1.48,
+      "B": -0.96,
+      "C": -1.44,
+      "D": -0.46,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_242",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.6}^{0.1} (1.5*t**2 + 1.2*sin(2*t)) e^{- x (1.3*t**4 + 0.7*cos(t) + -1.3*t**3)} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.5*t**2 + 1.2*sin(2*t)",
+      "f": "1.3*t**4 + 0.7*cos(t) + -1.3*t**3",
+      "a": -0.6,
+      "b": 0.1,
+      "k": -1
+    },
+    "options": {
+      "A": -1.67,
+      "B": -2.44,
+      "C": -3.23,
+      "D": -3.82,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_243",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.3}^{-0.1} (0.3*t**4 + 0.6*t**3 + 2.0*sin(t)) e^{- x (-1.3*t**4 + 1.0*cos(t) + 0.3*t**3)} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.3*t**4 + 0.6*t**3 + 2.0*sin(t)",
+      "f": "-1.3*t**4 + 1.0*cos(t) + 0.3*t**3",
+      "a": -1.3,
+      "b": -0.1,
+      "k": -1
+    },
+    "options": {
+      "A": -0.17,
+      "B": -0.27,
+      "C": -0.1,
+      "D": -0.06,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_244",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.8}^{-0.1} (0.4*t**2 + 0.8*sin(2*t)) e^{- x (1.9*t**4 + 1.0*cos(t) + 0.8*t**3)} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.4*t**2 + 0.8*sin(2*t)",
+      "f": "1.9*t**4 + 1.0*cos(t) + 0.8*t**3",
+      "a": -0.8,
+      "b": -0.1,
+      "k": -1
+    },
+    "options": {
+      "A": -0.77,
+      "B": -0.46,
+      "C": -0.65,
+      "D": -0.68,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_245",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.5}^{0.4} (1.5*t**3 + -1.1*t + 0.9*sin(t) + 0.8*cos(t)) e^{ x (-1.9*t**4 + 0.5*t**3 + -2.3*t**2)} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.5*t**3 + -1.1*t + 0.9*sin(t) + 0.8*cos(t)",
+      "f": "-1.9*t**4 + 0.5*t**3 + -2.3*t**2",
+      "a": -0.5,
+      "b": 0.4,
+      "k": 1
+    },
+    "options": {
+      "A": 0.78,
+      "B": 0.53,
+      "C": 0.3,
+      "D": 0.87,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_246",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.3}^{0.0} (-0.7*t**2 + 1.3*sin(2*t)) e^{- x (2.1*t**5 + 1.2*t**2 + 1.1*sin(2*t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-0.7*t**2 + 1.3*sin(2*t)",
+      "f": "2.1*t**5 + 1.2*t**2 + 1.1*sin(2*t)",
+      "a": -0.3,
+      "b": 0.0,
+      "k": -1
+    },
+    "options": {
+      "A": -1.01,
+      "B": -1.13,
+      "C": -0.68,
+      "D": -0.22,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_247",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.4}^{-0.1} (-1.7*t**3 + 0.9*cos(t) + 1.4*t) e^{ x (1.5*t**6 + 0.4*t**4 + 1.4*t**2 + 1.1*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "-1.7*t**3 + 0.9*cos(t) + 1.4*t",
+      "f": "1.5*t**6 + 0.4*t**4 + 1.4*t**2 + 1.1*sin(t)",
+      "a": -0.4,
+      "b": -0.1,
+      "k": 1
+    },
+    "options": {
+      "A": 0.93,
+      "B": 1.47,
+      "C": 1.53,
+      "D": 0.51,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_248",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.3}^{-0.2} (2.6*sin(t) + -0.8*t**2 + 1.3*cos(2*t)) e^{ x (-1.6*t**3 + 1.1*t**2 + 1.7*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "2.6*sin(t) + -0.8*t**2 + 1.3*cos(2*t)",
+      "f": "-1.6*t**3 + 1.1*t**2 + 1.7*sin(t)",
+      "a": -1.3,
+      "b": -0.2,
+      "k": 1
+    },
+    "options": {
+      "A": 0.78,
+      "B": 0.16,
+      "C": 0.47,
+      "D": 0.71,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_249",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-0.0}^{0.8} (1.1*t**3 + -1.6*t + 2.0*sin(t) + 1.3*cos(t)) e^{ x (-1.2*t**3 + -1.9*t**2 + 1.1*sin(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "1.1*t**3 + -1.6*t + 2.0*sin(t) + 1.3*cos(t)",
+      "f": "-1.2*t**3 + -1.9*t**2 + 1.1*sin(t)",
+      "a": -0.0,
+      "b": 0.8,
+      "k": 1
+    },
+    "options": {
+      "A": 0.81,
+      "B": 0.29,
+      "C": 0.57,
+      "D": 0.34,
+      "E": "None of the Above"
+    }
+  },
+  {
+    "id": "LAPLACE_250",
+    "domain": "laplace_method",
+    "question": "Consider the integral \\par \\begin{equation} I(x) = \\int_{-1.3}^{-0.3} (0.2*t**5 + -0.8*t**3 + 1.6*t**2 + 1.3*sin(t)) e^{ x (-1.1*t**5 + 0.1*t**3 + 1.3*cos(t))} \\, dt \\end{equation} In the limit $x \\to \\infty$, the leading-order asymptotic form is $I(x) \\approx \\frac{A \\cdot e^{c x}}{x}$. What is the numerical value of the pre-exponential factor $A$ (rounded to 2 decimals)?",
+    "params": {
+      "g": "0.2*t**5 + -0.8*t**3 + 1.6*t**2 + 1.3*sin(t)",
+      "f": "-1.1*t**5 + 0.1*t**3 + 1.3*cos(t)",
+      "a": -1.3,
+      "b": -0.3,
+      "k": 1
+    },
+    "options": {
+      "A": -0.28,
+      "B": -0.18,
+      "C": -0.12,
+      "D": -0.24,
+      "E": "None of the Above"
+    }
+  }
+]
