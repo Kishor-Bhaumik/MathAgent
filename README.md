@@ -6,7 +6,7 @@ The current workflow has been used with:
 
 - `claude-opus-4-8`
 - `gpt-5.5`
-- - `Qwen/Qwen3.6-7B`
+- `Qwen/Qwen3.6-7B`
 - `Qwen/Qwen2.5-7B-Instruct`
 
 ## What This Project Does
