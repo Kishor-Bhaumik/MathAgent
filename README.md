@@ -93,11 +93,11 @@ Use `code_evaluator.py` for API-based models.
 Tool-augmented evaluation:
 
 ```bash
-python code_evaluator.py --model claude-opus-4-8 --mode tool_augmented --max-tokens 2048
+python code_evaluator.py --model claude-opus-4-8 --mode tool_augmented --max-tokens 4096
 ```
 
 ```bash
-python code_evaluator.py --model gpt-5.5 --mode tool_augmented --max-tokens 2048
+python code_evaluator.py --model gpt-5.5 --mode tool_augmented --max-tokens 4096
 ```
 
 The evaluator automatically chooses the Anthropic or OpenAI client from the model name.
@@ -122,7 +122,7 @@ python no_tool_batch_evaluator.py status --model gpt-5.5
 python no_tool_batch_evaluator.py fetch  --model gpt-5.5
 ```
 
-The script keeps a separate state file for each model, so submitted batch jobs can be checked and fetched later. The `fetch` step downloads the model outputs, extracts the answer letter, scores against `answers/all_answers_with_E.json`, and saves a result file under `results/`.
+The script keeps a separate state file for each model, so submitted batch jobs can be checked and fetched later. The `fetch` step downloads the model outputs, extracts the answer letter, scores against `answers/all_answers_with_E.json`.
 
 ## Run Local Model Evaluation
 
@@ -157,38 +157,17 @@ python code_evaluator.py --model claude-opus-4-8 --mode no_tool_access
 The model writes Python code, the evaluator executes it, and the model chooses the closest option.
 
 ```bash
-python code_evaluator.py --model claude-opus-4-8 --mode code_generation --max-tokens 2048
+python code_evaluator.py --model claude-opus-4-8 --mode code_generation --max-tokens 4096
 ```
 
-### Tool Augmented
+### Tool Augmented / Agent 
 
 The model runs inside the MathAgent loop. It must call `run_python` for numerical work, observe the output, and then call `submit_answer`.
 
 ```bash
-python code_evaluator.py --model claude-opus-4-8 --mode tool_augmented --max-tokens 2048
+python code_evaluator.py --model claude-opus-4-8 --mode tool_augmented --max-tokens 4096
 ```
 
-This is the main workflow used for the current MathAgent experiments.
 
-## Summarize Results
 
-After running an evaluation, summarize a result file with:
 
-```bash
-python summarize_results.py results/results_gpt-5-5_tool_augmented.json
-```
-
-Result files include per-question details such as:
-
-- Question ID
-- Domain
-- Model answer
-- Expected answer
-- Correct/incorrect status
-- Tool steps and executions for agent runs
-
-## Notes
-
-Generated model code is executed locally through `code_runner.py`, which uses a subprocess and timeout so failed or slow code does not stop the main evaluator.
-
-The benchmark is intended for comparing how well LLMs can solve numerical applied mathematics problems when they are allowed to use code as a tool.
