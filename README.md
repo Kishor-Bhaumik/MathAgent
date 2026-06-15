@@ -36,7 +36,6 @@ MathAgent/
 ├── agent_runner.py
 ├── tools.py
 ├── code_runner.py
-├── summarize_results.py
 ├── claude_code_batch_evaluator.py
 ├── solvers/
 ├── questions/
@@ -53,7 +52,6 @@ Important files:
 - `agent_runner.py` runs the tool-augmented MathAgent loop.
 - `tools.py` defines the text-based tools used by the agent.
 - `code_runner.py` safely executes generated Python code in a subprocess.
-- `results/` stores model evaluation outputs.
 
 ## Setup
 
