@@ -40,8 +40,7 @@ MathAgent/
 ├── claude_code_batch_evaluator.py
 ├── solvers/
 ├── questions/
-├── answers/
-└── results/
+└── answers/
 ```
 
 Important files:
